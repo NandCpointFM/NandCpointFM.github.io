@@ -5,7 +5,13 @@
 }
 document.addEventListener("DOMContentLoaded", initScrollReveal);
 document.addEventListener("pjax:success", initScrollReveal);
-</script><link rel="icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="preconnect" href="https://fastly.jsdelivr.net/npm/" crossorigin><script id="yun-config">
+</script><link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script><link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css"><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js"></script><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"></script><script type="module">import { renderKatex } from '/js/utils.js'
+document.addEventListener("DOMContentLoaded", () => {
+  renderKatex({
+    ...{},
+    ...undefined?.options,
+  });
+});</script><link rel="icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="preconnect" href="https://fastly.jsdelivr.net/npm/" crossorigin><script id="yun-config">
     window.Yun = {}
     window.CONFIG = {"hostname":"nandcpointfm.github.io","root":"/","title":"游戏不止","version":"1.10.11","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}.","hits":"${hits} results found","hits_time":"${hits} results found in ${time} ms"},"anonymous_image":"https://cdn.yunyoujun.cn/img/avatar/none.jpg","say":{"api":"https://el-bot-api.vercel.app/api/words/young"},"fireworks":{"colors":null},"vendors":{"host":"https://fastly.jsdelivr.net/npm/","darken":"https://fastly.jsdelivr.net/npm/darken@1.5.0"}};
   </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><meta name="description" content="参考资料：华中科技大学-熊硕《游戏学导论》（系列课程）">
@@ -41,80 +47,99 @@ IconifyProviders = {
 <li><em>参考资料：华中科技大学-熊硕《游戏学导论》（系列课程）</em></li>
 </ul>
 <span id="more"></span>
-
-<h2 id="七、游戏策划·文案叙事，结构与选项"><a href="#七、游戏策划·文案叙事，结构与选项" class="headerlink" title="七、游戏策划·文案叙事，结构与选项"></a>七、游戏策划·文案叙事，结构与选项</h2><p><strong>写好一个故事很难，而且擅长写好文章，不等于擅长写好剧本。</strong></p>
-<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><h4 id="什么是结构？"><a href="#什么是结构？" class="headerlink" title="什么是结构？"></a>什么是结构？</h4><ul>
-<li>写剧本不同于写文章的问题：<ul>
+<h2 id="七、游戏策划·文案叙事，结构与选项">七、游戏策划·文案叙事，结构与选项</h2>
+<p><strong>写好一个故事很难，而且擅长写好文章，不等于擅长写好剧本。</strong></p>
+<h3 id="结构">结构</h3>
+<h4 id="什么是结构？">什么是结构？</h4>
+<ul>
+<li>写剧本不同于写文章的问题：
+<ul>
 <li>写到一半没了兴致。</li>
 <li>写到一半发现有逻辑漏洞不能自圆其说。</li>
 <li>写到一半发现文采飞扬但是故事性不甚理想。</li>
 </ul>
 </li>
-<li>结构是防止摔倒的拐杖，摩天大楼的钢筋<ul>
+<li>结构是防止摔倒的拐杖，摩天大楼的钢筋
+<ul>
 <li>建议先确定结构再开始写剧本。</li>
 <li>结构能让文案策划在最开始的阶段看到剧本的整体轮廓。</li>
 </ul>
 </li>
 </ul>
-<h4 id="音乐结构和剧本结构"><a href="#音乐结构和剧本结构" class="headerlink" title="音乐结构和剧本结构"></a>音乐结构和剧本结构</h4><ul>
+<h4 id="音乐结构和剧本结构">音乐结构和剧本结构</h4>
+<ul>
 <li>一般的音乐由前奏，旋律A，旋律B，副歌，尾声组成。</li>
 <li>剧本结构与音乐结构是相似的，也可以分为开端、经过、发展、高潮、结尾。</li>
-<li>前奏 &#x3D; 开端：<ul>
+<li>前奏 = 开端：
+<ul>
 <li>在开端的部分抓住玩家的心。</li>
 <li>如果开端阶段不能让玩家觉得有趣，就有可能让他们失去动力。</li>
 <li>谨慎使用慢热叙事（譬如《巫师3》）</li>
 </ul>
 </li>
-<li>副歌 &#x3D; 高潮<ul>
+<li>副歌 = 高潮
+<ul>
 <li>作者最想表达的内容，最具有情绪煽动性和思考价值。</li>
 </ul>
 </li>
-<li>旋律A&#x2F;B &#x3D; 过程 &#x2F; 发展<ul>
+<li>旋律A/B = 过程 / 发展
+<ul>
 <li>即使是完美的开端与高潮也需要得当的过程进行衔接，以进行一定的润滑。</li>
 </ul>
 </li>
 <li>不论是中国的起承转合，还是日本的序破急，再或是欧洲的三段式结构，都强调从开端递进到高潮的过程性。</li>
 </ul>
-<h4 id="剧本的前提"><a href="#剧本的前提" class="headerlink" title="剧本的前提"></a>剧本的前提</h4><ul>
+<h4 id="剧本的前提">剧本的前提</h4>
+<ul>
 <li>谁是主要角色？</li>
 <li>谁是对手？（这包括待攻克角色以及敌人角色扽等）</li>
 <li>他们之间为什么冲突？（这一冲突指广义上的矛盾，即，什么样的矛盾会让两者产生如此的关联）</li>
 <li>这冲突的结果会带来什么改变？</li>
 <li>主角需要采取哪些手段才能达成这种改变？</li>
 </ul>
-<h4 id="开端（起-序-第一幕）"><a href="#开端（起-序-第一幕）" class="headerlink" title="开端（起&#x2F;序&#x2F;第一幕）"></a>开端（起&#x2F;序&#x2F;第一幕）</h4><ul>
-<li>开端应当传达的信息：<ul>
+<h4 id="开端（起-序-第一幕）">开端（起/序/第一幕）</h4>
+<ul>
+<li>开端应当传达的信息：
+<ul>
 <li><strong>传达游戏的目的：</strong> 给玩家创造游戏的动机。</li>
 <li><strong>传达游戏的玩法：</strong> 游戏系统越复杂，新颖创意越多，教程的必要性就越强。</li>
 <li><strong>传达这是一个什么样的游戏：</strong> 展示游戏世界，阐明基本的主要角色之间的关系。</li>
 </ul>
 </li>
 </ul>
-<h4 id="开端吸引玩家的方法"><a href="#开端吸引玩家的方法" class="headerlink" title="开端吸引玩家的方法"></a>开端吸引玩家的方法</h4><ul>
-<li>受动型<ul>
+<h4 id="开端吸引玩家的方法">开端吸引玩家的方法</h4>
+<ul>
+<li>受动型
+<ul>
 <li>主角处于日常世界下，并没有能动性完成某事。</li>
 <li>因为某种事件的影响（也就是事件的继承）而产生了目的性。</li>
 </ul>
 </li>
-<li>开拓型<ul>
+<li>开拓型
+<ul>
 <li>游戏一开始主角就有能动地希望完成某事。</li>
 <li>常常用于任务型游戏、推理类、恐怖类。</li>
 </ul>
 </li>
-<li>“救猫咪”法则<ul>
+<li>“救猫咪”法则
+<ul>
 <li>不管多么让人难以带入情感的角色，只要让他在开头奋不顾身就下一直即将被车轮碾压的小猫，你就会发现他将成为“容易带入情感”的角色。————电影编剧大师：布莱克·斯奈德</li>
 </ul>
 </li>
 </ul>
-<h4 id="一些值得参考的开端方式"><a href="#一些值得参考的开端方式" class="headerlink" title="一些值得参考的开端方式"></a>一些值得参考的开端方式</h4><ul>
+<h4 id="一些值得参考的开端方式">一些值得参考的开端方式</h4>
+<ul>
 <li>《零之轨迹》（游戏开始就是主角在最终Boss战的场景）</li>
 <li>《幽城幻剑录》（第一个支线引发的蝴蝶效应）</li>
 <li>《刺客信条1》（主角全身神装开场）</li>
 </ul>
-<h4 id="通往高潮的过程（承-破-第二幕）"><a href="#通往高潮的过程（承-破-第二幕）" class="headerlink" title="通往高潮的过程（承&#x2F;破&#x2F;第二幕）"></a>通往高潮的过程（承&#x2F;破&#x2F;第二幕）</h4><ul>
+<h4 id="通往高潮的过程（承-破-第二幕）">通往高潮的过程（承/破/第二幕）</h4>
+<ul>
 <li>设定游戏失败。</li>
-<li>四种推进章节：<ul>
-<li>达成游戏目的的章节<ul>
+<li>四种推进章节：
+<ul>
+<li>达成游戏目的的章节
+<ul>
 <li>给目的设置障碍的章节。</li>
 <li>给目的提供援助的章节。</li>
 </ul>
@@ -125,23 +150,29 @@ IconifyProviders = {
 </ul>
 </li>
 </ul>
-<h4 id="安排冲突"><a href="#安排冲突" class="headerlink" title="安排冲突"></a>安排冲突</h4><ul>
-<li>人与人之间的冲突<ul>
+<h4 id="安排冲突">安排冲突</h4>
+<ul>
+<li>人与人之间的冲突
+<ul>
 <li>利害冲突、信念冲突、信仰冲突、性情冲突、是非善恶美丑的冲突等。</li>
 <li>把这些冲突有条有理、有系统、有组织、有因果、有意思地展现给玩家。</li>
 </ul>
 </li>
-<li>人与自然的冲突<ul>
+<li>人与自然的冲突
+<ul>
 <li>自然指环境、鬼神、宇宙、一切非人为的对抗体。</li>
 </ul>
 </li>
-<li>自己与自己的内心冲突<ul>
+<li>自己与自己的内心冲突
+<ul>
 <li>良心与欲望的冲突、信仰与信念的冲突。</li>
 </ul>
 </li>
 </ul>
-<h4 id="对手的冲突"><a href="#对手的冲突" class="headerlink" title="对手的冲突"></a>对手的冲突</h4><ul>
-<li>成为主角对手的角色，不能是平凡之辈，不是随便一种性格都可以担当“反派”这个重任。<ul>
+<h4 id="对手的冲突">对手的冲突</h4>
+<ul>
+<li>成为主角对手的角色，不能是平凡之辈，不是随便一种性格都可以担当“反派”这个重任。
+<ul>
 <li>反派的性格同样要坚强、要情感丰富、要有激烈的情绪、不肯妥协、充满野心。</li>
 <li>反派要从心理上、行为上绝对反对编剧赋予主角性格的价值思想。主角若讲仁义，反派就讲功利；主角若讲仁慈，反派就讲残忍；主角赞成的，反派必须反对。</li>
 <li>反派要有独特的性格，要坚持其自认的道理，并且奋勇地、倾力地、拼命地反对主角。反派并非主角，他的反派性格可以单纯、直接。越单纯直接，来自他的有压力、反动力就越强大。</li>
@@ -149,15 +180,18 @@ IconifyProviders = {
 </ul>
 </li>
 </ul>
-<h4 id="高潮"><a href="#高潮" class="headerlink" title="高潮"></a>高潮</h4><ul>
+<h4 id="高潮">高潮</h4>
+<ul>
 <li>剧烈、兴奋、纠葛的最高峰、对立的最高峰。</li>
-<li>达成游戏目的的瞬间。<ul>
+<li>达成游戏目的的瞬间。
+<ul>
 <li>推理类游戏得知谁是凶手的瞬间。</li>
 <li>剧情类游戏发现谁是幕后黑手的瞬间。</li>
 <li>战斗类游戏与强大敌人开战的瞬间。</li>
 </ul>
 </li>
-<li>通往高潮的过程一定要有趣。<ul>
+<li>通往高潮的过程一定要有趣。
+<ul>
 <li>比如角色扮演类游戏，在打败最终Boss之前，制造出所有角色总动员的情景，让前面章节和角色在玩家心中的形象更加鲜明。</li>
 <li>通过铺垫，玩家内心会开始回放之前在游戏中获得的体验与情感，这种心理效果将唤起高潮应有的感动。</li>
 <li>缺乏铺垫的最终高潮必然是平淡无奇的。</li>
@@ -165,50 +199,63 @@ IconifyProviders = {
 </ul>
 </li>
 </ul>
-<h4 id="结局"><a href="#结局" class="headerlink" title="结局"></a>结局</h4><ul>
+<h4 id="结局">结局</h4>
+<ul>
 <li>结局是向玩家传达游戏目的达成后产生了什么结果的部分。</li>
-<li>完结型结局<ul>
+<li>完结型结局
+<ul>
 <li>主人公生活的地方恢复了和平，和旅途中结识的同伴喜结连理，美好地生活下去。</li>
 </ul>
 </li>
-<li>开放性结局<ul>
+<li>开放性结局
+<ul>
 <li>主人公打倒了魔王，但是自己的内心似乎也隐隐受到了影响，不知道未来是否能回复光明。</li>
 </ul>
 </li>
-<li>续作型结局<ul>
+<li>续作型结局
+<ul>
 <li>主人公打倒了魔王，而魔王二段变身逃之夭夭，主角负伤倒地。</li>
 </ul>
 </li>
 <li>设定游戏结束——通知游戏玩家彻底Game Over；隐隐暗示玩家没看到真结局。</li>
-<li>重玩<ul>
+<li>重玩
+<ul>
 <li>强制玩家熟悉规则。</li>
-<li>特别的使用方式，比如《弹丸论破》恶趣味结局 &#x2F; 《隐形守护者》送延安。</li>
+<li>特别的使用方式，比如《弹丸论破》恶趣味结局 / 《隐形守护者》送延安。</li>
 </ul>
 </li>
 </ul>
-<h3 id="表达"><a href="#表达" class="headerlink" title="表达"></a>表达</h3><h4 id="表达是什么？"><a href="#表达是什么？" class="headerlink" title="表达是什么？"></a>表达是什么？</h4><ul>
+<h3 id="表达">表达</h3>
+<h4 id="表达是什么？">表达是什么？</h4>
+<ul>
 <li>同样一份内容和体验，表达方式不同给玩家的感受完全不同。</li>
 <li>善于表达，是传达游戏感情的必备元素。</li>
 </ul>
-<h4 id="表达方式"><a href="#表达方式" class="headerlink" title="表达方式"></a>表达方式</h4><ul>
-<li>善于表达者与不善表达者，区别在于两点：<ul>
+<h4 id="表达方式">表达方式</h4>
+<ul>
+<li>善于表达者与不善表达者，区别在于两点：
+<ul>
 <li>阐述结论的实际不同。</li>
 <li>语言长度的不同。</li>
 </ul>
 </li>
-<li>阐述时机：<ul>
+<li>阐述时机：
+<ul>
 <li>把一既定事实置于叙述的不同位置，会带来不同的叙述效果。</li>
 </ul>
 </li>
-<li>语言长度：<ul>
+<li>语言长度：
+<ul>
 <li>不善于叙述的人其表达类似于新闻播报，而善于表达的人更容易表现情感、阐释细节。</li>
 </ul>
 </li>
 <li>剧本的目的是追求感动与共鸣，去触动人的感觉、内心、和感情，所以善于表达的人说话方式更加接近剧本的需求。</li>
 </ul>
-<h4 id="传达过程"><a href="#传达过程" class="headerlink" title="传达过程"></a>传达过程</h4><ul>
+<h4 id="传达过程">传达过程</h4>
+<ul>
 <li>先将说话人的“目的”传达给对方，这是对话的开始。</li>
-<li>传达了聊天的“目的”之后<ul>
+<li>传达了聊天的“目的”之后
+<ul>
 <li>不善表达的人直接传达结果。</li>
 <li>善于表达的人会详细阐释抵达结果的过程</li>
 </ul>
@@ -217,16 +264,20 @@ IconifyProviders = {
 <li>此外，还需要考虑好传达信息的顺序。</li>
 <li>换句话说，一个善于表达的人会将事实更细腻而原始地传达给受众，而不是表述一段缩略的、总结的、经过自己加工的摘要，因为对于剧本而言，传达的目的不是告知结果，而是希望受众能够感同身受。</li>
 </ul>
-<h4 id="游戏文本"><a href="#游戏文本" class="headerlink" title="游戏文本"></a>游戏文本</h4><ul>
-<li>游戏文本不同于写文章，由台词、旁白、指示三部分构成。<ul>
-<li>台词：对话、自言自语等角色说出的话。<ul>
+<h4 id="游戏文本">游戏文本</h4>
+<ul>
+<li>游戏文本不同于写文章，由台词、旁白、指示三部分构成。
+<ul>
+<li>台词：对话、自言自语等角色说出的话。
+<ul>
 <li>对话或独白。</li>
 <li>表达感情。</li>
 <li>说明情况。</li>
 <li>推进故事。</li>
 </ul>
 </li>
-<li>旁白：风景描写、心理描写等出去台词之外的出现于画面的文字。<ul>
+<li>旁白：风景描写、心理描写等出去台词之外的出现于画面的文字。
+<ul>
 <li>阐述事实。</li>
 <li>表现心情与感情。</li>
 <li>表现视觉、物理上的事物。</li>
@@ -234,7 +285,8 @@ IconifyProviders = {
 <li>推进故事。</li>
 </ul>
 </li>
-<li>指示：诸如“这里背景发生变化”“登场角色在这里出现”（面向开发团队内部的文字内容，或是世界观之外的对玩家的提示。）<ul>
+<li>指示：诸如“这里背景发生变化”“登场角色在这里出现”（面向开发团队内部的文字内容，或是世界观之外的对玩家的提示。）
+<ul>
 <li>指定具体的背景与角色。</li>
 <li>指定某些需要特殊处理的细节。</li>
 </ul>
@@ -242,18 +294,23 @@ IconifyProviders = {
 </ul>
 </li>
 </ul>
-<h3 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h3><p><strong>前文所叙的游戏剧情结构与表达，其本质仍然是文学、戏剧或电影的表现技巧的延申。而游戏作为一种交互性的媒体，其最大的叙事特征是选项，也就是叙事的不确定性。</strong></p>
-<h4 id="交互与选项"><a href="#交互与选项" class="headerlink" title="交互与选项"></a>交互与选项</h4><ul>
+<h3 id="选项">选项</h3>
+<p><strong>前文所叙的游戏剧情结构与表达，其本质仍然是文学、戏剧或电影的表现技巧的延申。而游戏作为一种交互性的媒体，其最大的叙事特征是选项，也就是叙事的不确定性。</strong></p>
+<h4 id="交互与选项">交互与选项</h4>
+<ul>
 <li>游戏三要素：规则、博弈、不确定性。</li>
 <li>玩家积极地参与到内容之中，完成一段叙事的展开，是游戏与电影等传统媒体的最大特点。</li>
-<li>选项是让游戏产生交互性的最佳策略。<ul>
+<li>选项是让游戏产生交互性的最佳策略。
+<ul>
 <li>为玩家的问题或玩家解决问题的方案提供多个答案，是为选项。</li>
 </ul>
 </li>
 <li>其局限性在于，选项也是策划预先设计的，自由度无法完全跳出设计者规定的框架。</li>
 </ul>
 <blockquote>
-<h3 id="便签-7-1"><a href="#便签-7-1" class="headerlink" title="便签-7.1"></a>便签-7.1</h3><h4 id="关于选择"><a href="#关于选择" class="headerlink" title="关于选择"></a>关于选择</h4><p>选择并不仅仅指文字游戏的剧情选项，并不一定以Button的形式出现在游戏中。不妨从游戏三要素角度来看选择其本质。</p>
+<h3 id="便签-7-1">便签-7.1</h3>
+<h4 id="关于选择">关于选择</h4>
+<p>选择并不仅仅指文字游戏的剧情选项，并不一定以Button的形式出现在游戏中。不妨从游戏三要素角度来看选择其本质。</p>
 <p>事实上，游戏三要素中，规则、博弈、不确定性，都对应着选择。</p>
 <ul>
 <li>规则代表着非自由，代表著固定与边界。而边界之内，非自由之下，即为自由，也即为选择。可以说，玩家按照规则做出的任何行为，都可以视作选择的一部分。</li>
@@ -262,35 +319,44 @@ IconifyProviders = {
 </ul>
 <p>因此可以认为，所有的行为，或是任何广义上可以称之为 “一种选择” 的选择，都是我们讨论的对象。从狭义的角度来看，《杀戮尖塔2》的卡牌构筑，其具有极高的自由性，可以认为是选择的一部分，而从更广义的叫角度来看，若《反恐精英2》为例，一个不熟练狙击武器的玩家在A小发现一把狙，他要不要捡起它来对抗A大斜坡上的敌人？这也是一种选择，哪怕这种选择的起因、经过、结果都不由策划控制，其仍然是一种选择。</p>
 </blockquote>
-<h4 id="选项的重要性"><a href="#选项的重要性" class="headerlink" title="选项的重要性"></a>选项的重要性</h4><ul>
-<li>选项的存在能强行将玩家拉入游戏的世界。<ul>
+<h4 id="选项的重要性">选项的重要性</h4>
+<ul>
+<li>选项的存在能强行将玩家拉入游戏的世界。
+<ul>
 <li>一旦玩家在游戏中触发了选项，那么只要不做出选择，游戏进程就将停滞。</li>
 </ul>
 </li>
 <li>人对于参与性的重视，以及对自己出力导致世界某个事件改变的满足感，是驱动人参与某一进程的重要因素。</li>
 <li>自己的选择，自己承担未知的后果与责任，也是游戏的快乐源泉之一。（对于未知的恐惧，与恐惧消弭的狂喜，应当是一体两面的）</li>
 </ul>
-<h4 id="选项的种类"><a href="#选项的种类" class="headerlink" title="选项的种类"></a>选项的种类</h4><ul>
+<h4 id="选项的种类">选项的种类</h4>
+<ul>
 <li>与故事发展相关的选项（譬如没有任何隐藏判定条件的剧情选择）。</li>
 <li>与参数相关的选项（比如臭名昭著的好感度系统）。</li>
-<li>无意义选项（其实有意义）。<ul>
+<li>无意义选项（其实有意义）。
+<ul>
 <li>为剧情服务的无意义选项，其实是有意义的，而完全脱离于剧情的无意义选项，是真正的无意义选项。</li>
 <li>真正的无意义选项应当避免。</li>
 </ul>
 </li>
 </ul>
 <blockquote>
-<h3 id="便签-7-2"><a href="#便签-7-2" class="headerlink" title="便签-7.2"></a>便签-7.2</h3><h4 id="什么是选项的种类？"><a href="#什么是选项的种类？" class="headerlink" title="什么是选项的种类？"></a>什么是选项的种类？</h4><p>不妨如此理解：以《荒野大镖客2》为例，亚瑟的结局走向狼结局或者鹿结局，是为与参数相关的选项。其走向一定程度上依赖（<em>甚至直接取决于</em>）某个参数的数值（<em>游戏中这一数值是荣誉值</em>）。而亚瑟最后是否要回去取钱（或者选择帮助约翰一起逃脱）是与故事发展相关的选项，即这类选项玩家只需要按照内心想法做出选择即可，而这一选择会影响到后续的剧情发展。所谓与故事发展相关的选项，以及与参数相关的选项，在某种程度上，可以认为前者包含了后者。而至于“无意义的选项”，我们不妨假设自己是荒野大镖客的剧编，我们要在迈卡射杀亚瑟之前说一句遗言，玩家需要选择说些什么。这类“无意义的选项”并不会为未来的剧情发展带来任何形式的影响，但是可以让玩家感受到主角内心的活动，或是主角心境的变化，亦可以让玩家与主角更深层次绑定，从而在后续的游玩体验中增强代入感，或是进一步强化玩家的心理冲击。这也就是 <strong>“为剧情服务的无意义选项，其实是有意义的，而完全脱离于剧情的无意义选项，是真正的无意义选项。”</strong></p>
+<h3 id="便签-7-2">便签-7.2</h3>
+<h4 id="什么是选项的种类？">什么是选项的种类？</h4>
+<p>不妨如此理解：以《荒野大镖客2》为例，亚瑟的结局走向狼结局或者鹿结局，是为与参数相关的选项。其走向一定程度上依赖（<em>甚至直接取决于</em>）某个参数的数值（<em>游戏中这一数值是荣誉值</em>）。而亚瑟最后是否要回去取钱（或者选择帮助约翰一起逃脱）是与故事发展相关的选项，即这类选项玩家只需要按照内心想法做出选择即可，而这一选择会影响到后续的剧情发展。所谓与故事发展相关的选项，以及与参数相关的选项，在某种程度上，可以认为前者包含了后者。而至于“无意义的选项”，我们不妨假设自己是荒野大镖客的剧编，我们要在迈卡射杀亚瑟之前说一句遗言，玩家需要选择说些什么。这类“无意义的选项”并不会为未来的剧情发展带来任何形式的影响，但是可以让玩家感受到主角内心的活动，或是主角心境的变化，亦可以让玩家与主角更深层次绑定，从而在后续的游玩体验中增强代入感，或是进一步强化玩家的心理冲击。这也就是 <strong>“为剧情服务的无意义选项，其实是有意义的，而完全脱离于剧情的无意义选项，是真正的无意义选项。”</strong></p>
 </blockquote>
-<h4 id="选项的设计"><a href="#选项的设计" class="headerlink" title="选项的设计"></a>选项的设计</h4><ul>
+<h4 id="选项的设计">选项的设计</h4>
+<ul>
 <li>明确选择的基准。（<em>我们在对什么事情做出选择？选项之间有何差别？会带来怎样影响？</em>）</li>
 <li>设置具有合理性的选项。</li>
 <li>设置每个选项都值得思考的选项。</li>
-<li>根据结构选择合适的地方插入。<ul>
+<li>根据结构选择合适的地方插入。
+<ul>
 <li>起承转合、两两之间。</li>
 </ul>
 </li>
-<li>根据主人公的情感变化选择合适的位置插入<ul>
+<li>根据主人公的情感变化选择合适的位置插入
+<ul>
 <li>促进玩家的感带入。</li>
 </ul>
 </li>
@@ -299,6 +365,5 @@ IconifyProviders = {
 <li>避免太多无意义选项。</li>
 </ul>
 </br>
-
 <p><strong><center>END </center></strong></p>
 </div></section><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="Donate" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><span class="icon iconify" data-icon="ri:hand-coin-line"></span></span><div id="reward-comment">I'm so cute. Please give me money.</div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>Post author: </strong>Junwei LI</li><li class="post-copyright-link"><strong>Post link: </strong><a href="https://nandcpointfm.github.io/2026/03/29/DaoLun7/" title="关于《游戏学导论》的研学记录与个人思考 - ( 7 )">https://nandcpointfm.github.io/2026/03/29/DaoLun7/</a></li><li class="post-copyright-license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><span class="icon iconify" data-icon="ri:creative-commons-line"></span><span class="icon iconify" data-icon="ri:creative-commons-by-line"></span><span class="icon iconify" data-icon="ri:creative-commons-nc-line"></span><span class="icon iconify" data-icon="ri:creative-commons-sa-line"></span></a> unless otherwise stated.</li></ul></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2026/03/31/DaoLun8/" rel="prev" title="关于《游戏学导论》的研学记录与个人思考 - ( 8 )"><span class="icon iconify" data-icon="ri:arrow-left-s-line"></span><span class="post-nav-text">关于《游戏学导论》的研学记录与个人思考 - ( 8 )</span></a></div><div class="post-nav-item"><a class="post-nav-next" href="/2025/12/27/DaoLun6/" rel="next" title="关于《游戏学导论》的研学记录与个人思考 - ( 6 )"><span class="post-nav-text">关于《游戏学导论》的研学记录与个人思考 - ( 6 )</span><span class="icon iconify" data-icon="ri:arrow-right-s-line"></span></a></div></div></div><div class="hty-card" id="comment"></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2019 – 2026 </span><span class="with-love" id="animate"><span class="icon iconify" data-icon="ri:cloud-line"></span></span><span class="author"> Junwei LI</span></div><div class="powered"><span>Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> v8.1.1</span><span class="footer-separator">|</span><span>Theme - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.10.11</span></div></footer></div><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><span class="icon iconify" data-icon="ri:arrow-up-s-line"></span><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a></body></html>
