@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });</script><link rel="icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="preconnect" href="https://fastly.jsdelivr.net/npm/" crossorigin><script id="yun-config">
     window.Yun = {}
     window.CONFIG = {"hostname":"nandcpointfm.github.io","root":"/","title":"游戏不止","version":"1.10.11","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}.","hits":"${hits} results found","hits_time":"${hits} results found in ${time} ms"},"anonymous_image":"https://cdn.yunyoujun.cn/img/avatar/none.jpg","say":{"api":"/data/sentences.json"},"fireworks":{"colors":null},"vendors":{"host":"https://fastly.jsdelivr.net/npm/","darken":"https://fastly.jsdelivr.net/npm/darken@1.5.0"}};
-  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><meta name="description" content="参考资料：华中科技大学-熊硕《游戏学导论》（系列课程） 本系列博客中，未标注“思考”、“便签”的部分，多摘引、校饰自熊硕老师的课件原文。">
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><meta name="description" content="参考资料：华中科技大学-熊硕《游戏学导论》（系列课程） 本系列博客中，未标注“思考”、“便签”的部分，多摘引、校饰自熊硕老师的课件原文。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于《游戏学导论》的研学记录与个人思考 - ( 11 )">
 <meta property="og:url" content="https://nandcpointfm.github.io/2026/04/17/DaoLun11/index.html">
 <meta property="og:site_name" content="Natika_s World of Game Designing">
-<meta property="og:description" content="参考资料：华中科技大学-熊硕《游戏学导论》（系列课程） 本系列博客中，未标注“思考”、“便签”的部分，多摘引、校饰自熊硕老师的课件原文。">
+<meta property="og:description" content="参考资料：华中科技大学-熊硕《游戏学导论》（系列课程） 本系列博客中，未标注“思考”、“便签”的部分，多摘引、校饰自熊硕老师的课件原文。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2026-04-17T05:00:00.000Z">
 <meta property="article:modified_time" content="2026-04-18T05:56:24.155Z">
@@ -43,43 +43,61 @@ IconifyProviders = {
     // Wait for 1 second before switching API hosts
     rotate: 1000,
   },
-};</script><script defer src="https://fastly.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="Table of Contents"><span class="icon iconify" data-icon="ri:list-ordered"></span></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="Overview"><span class="icon iconify" data-icon="ri:passport-line"></span></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="Junwei LI"><img width="96" loading="lazy" src="/images/head1.jpg" alt="Junwei LI"></a><div class="site-author-name"><a href="/about/">Junwei LI</a></div><span class="site-name">Natika_s World of Game Designing</span><sub class="site-subtitle">I wanna be the BEST GAME DESIGNER.</sub><div class="site-description">a personal blog for sharing my thoughts about the GREATEST GAMES</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="Home"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:home-4-line"></span></span></a><div class="site-state-item"><a href="/archives/" title="Archives"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:archive-line"></span></span><span class="site-state-item-count">12</span></a></div><div class="site-state-item"><a href="/categories/" title="Categories"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:folder-2-line"></span></span><span class="site-state-item-count">2</span></a></div><div class="site-state-item"><a href="/tags/" title="Tags"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="site-state-item-count">3</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:settings-line"></span></span></a></nav><hr style="margin-bottom:0.5rem"><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><span class="icon iconify" data-icon="ri:genderless-line"></span></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><span class="icon iconify" data-icon="ri:contrast-2-line"></span></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E4%B8%80%E6%B8%B8%E6%88%8F%E4%B8%AD%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%86%B3%E7%AD%96%E4%B8%8E%E6%90%9C%E7%B4%A2"><span class="toc-number">1.</span> <span class="toc-text">十一、游戏中的人工智能·决策与搜索</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E7%AE%80%E8%BF%B0"><span class="toc-number">1.1.</span> <span class="toc-text">关于人工智能的简述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E5%9F%BA%E7%A1%80"><span class="toc-number">1.1.1.</span> <span class="toc-text">人工智能的基础</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AD%A6%E7%A7%91%E7%9A%84%E5%A4%A7%E8%87%B4%E5%88%86%E7%B1%BB"><span class="toc-number">1.1.2.</span> <span class="toc-text">人工智能学科的大致分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%AE%E5%89%8D%E6%B8%B8%E6%88%8Fai%E7%9A%84%E8%83%8C%E6%99%AF"><span class="toc-number">1.1.3.</span> <span class="toc-text">目前游戏AI的背景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E4%B8%89%E7%A7%8D%E5%88%86%E7%B1%BB"><span class="toc-number">1.1.4.</span> <span class="toc-text">机器学习的三种分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%97%A5%E5%B8%B8%E5%BA%94%E7%94%A8"><span class="toc-number">1.1.5.</span> <span class="toc-text">机器学习的日常应用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%B3%E7%AD%96"><span class="toc-number">1.2.</span> <span class="toc-text">决策</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%8E%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E9%97%AE%E9%A2%98%E5%BC%80%E5%A7%8B"><span class="toc-number">1.2.1.</span> <span class="toc-text">从一个简单的问题开始</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%B3%E7%AD%96%E6%A0%91decision-tree"><span class="toc-number">1.2.2.</span> <span class="toc-text">决策树（Decision Tree）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%86%B5entropy"><span class="toc-number">1.2.3.</span> <span class="toc-text">熵（Entropy）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E5%A2%9E%E7%9B%8A"><span class="toc-number">1.2.4.</span> <span class="toc-text">信息增益</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.</span> <span class="toc-text">搜索</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8A%B6%E6%80%81state%E4%B8%8E%E8%A1%8C%E5%8A%A8action"><span class="toc-number">1.3.1.</span> <span class="toc-text">状态（State）与行动（Action）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E7%A9%BA%E9%97%B4%E5%9B%BE"><span class="toc-number">1.3.2.</span> <span class="toc-text">状态空间图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2%E6%A0%91%E6%B8%B8%E6%88%8Fai%E6%A0%B8%E5%BF%83"><span class="toc-number">1.3.3.</span> <span class="toc-text">搜索树（游戏AI核心）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E4%BA%8E%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.4.</span> <span class="toc-text">基于搜索树的搜索</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%90%9C%E7%B4%A2%E6%96%B9%E6%B3%95"><span class="toc-number">1.3.5.</span> <span class="toc-text">系统的搜索方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E7%BA%B5%E5%9E%8B%E6%90%9C%E7%B4%A2-depth-first-search-dfs"><span class="toc-number">1.3.6.</span> <span class="toc-text">深度优先（纵型）搜索-Depth-first
-search (DFS)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#depth-first-search-dfs-%E7%AE%97%E6%B3%95%E8%B7%AF%E5%BE%84"><span class="toc-number">1.3.7.</span> <span class="toc-text">Depth-first search (DFS)
-算法路径</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#dfs%E7%9A%84%E7%89%B9%E5%BE%81"><span class="toc-number">1.3.8.</span> <span class="toc-text">DFS的特征</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%A8%AA%E5%9E%8B%E6%90%9C%E7%B4%A2-breadth-first-search-bfs"><span class="toc-number">1.3.9.</span> <span class="toc-text">广度优先（横型）搜索-Breadth-first
-search (BFS)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#breadth-first-search-bfs%E7%AE%97%E6%B3%95%E8%B7%AF%E5%BE%84"><span class="toc-number">1.3.10.</span> <span class="toc-text">Breadth-first search
-(BFS)算法路径</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#bfs%E7%9A%84%E7%89%B9%E5%BE%81"><span class="toc-number">1.3.11.</span> <span class="toc-text">BFS的特征</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9B%B6%E5%92%8C%E6%B8%B8%E6%88%8F"><span class="toc-number">1.3.12.</span> <span class="toc-text">零和游戏</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%E5%87%BD%E6%95%B0"><span class="toc-number">1.3.13.</span> <span class="toc-text">评价函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#minmax-tree"><span class="toc-number">1.3.14.</span> <span class="toc-text">MINMAX Tree</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%BF%E7%AD%BE-11.1"><span class="toc-number">1.4.</span> <span class="toc-text">便签-11.1</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#minmax%E6%B3%95%E7%89%B9%E5%BE%81"><span class="toc-number">1.4.1.</span> <span class="toc-text">MINMAX法特征</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%CE%B1%CE%B2%E6%B3%95"><span class="toc-number">1.4.2.</span> <span class="toc-text">αβ法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%CE%B1%CE%B2%E6%B3%95alphabeta-pruning%E7%9A%84%E6%95%88%E7%8E%87%E5%8C%96"><span class="toc-number">1.4.3.</span> <span class="toc-text">αβ法（αβ pruning）的效率化</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%96%B9%E6%B3%95"><span class="toc-number">1.5.</span> <span class="toc-text">蒙特卡洛方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%89%E4%BA%9B%E6%83%85%E5%86%B5%E4%B8%8B%E5%BE%88%E9%9A%BE%E6%8F%8F%E8%BF%B0%E7%8A%B6%E6%80%81%E8%AF%84%E4%BB%B7%E5%87%BD%E6%95%B0"><span class="toc-number">1.5.1.</span> <span class="toc-text">有些情况下很难描述状态评价函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%B3%95-monte-carlo-method-mc"><span class="toc-number">1.5.2.</span> <span class="toc-text">蒙特卡洛法 (Monte Carlo
-method, MC)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%B3%95%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87pi"><span class="toc-number">1.5.3.</span> <span class="toc-text">蒙特卡洛法应用实例：计算圆周率π</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%8E%A2%E7%B4%A2%E6%A0%91%E7%9A%84%E6%84%8F%E4%B9%89"><span class="toc-number">1.5.4.</span> <span class="toc-text">蒙特卡洛探索树的意义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%B3%95%E5%92%8C%E6%B8%B8%E6%88%8F"><span class="toc-number">1.5.5.</span> <span class="toc-text">蒙特卡洛法和游戏</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%B3%95%E7%9A%84%E7%89%B9%E5%BE%81"><span class="toc-number">1.5.6.</span> <span class="toc-text">蒙特卡洛法的特征</span></a></li></ol></li></ol></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article" style="--smc-primary:#0078E7;"><link itemprop="mainEntityOfPage" href="https://NandCpointFM.github.io/2026/04/17/DaoLun11/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Junwei LI"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Natika_s World of Game Designing"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">关于《游戏学导论》的研学记录与个人思考 - ( 11 )</h1><div class="post-meta"><div class="post-time"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-line"></span></span> <time title="Created: 2026-04-17 13:00:00" itemprop="dateCreated datePublished" datetime="2026-04-17T13:00:00+08:00">2026-04-17</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-2-line"></span></span> <time title="Modified: 2026-04-18 13:56:24" itemprop="dateModified" datetime="2026-04-18T13:56:24+08:00">2026-04-18</time></div><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><span class="icon iconify" data-icon="ri:folder-line"></span></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">游戏设计</span></a></span> > <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1/%E7%9F%A5%E8%AF%86%E8%BE%93%E5%85%A5/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">知识输入</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag-item" href="/tags/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">游戏设计</span></a><a class="tag-item" href="/tags/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">理论知识</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><ul>
+};</script><script defer src="https://fastly.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="Table of Contents"><span class="icon iconify" data-icon="ri:list-ordered"></span></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="Overview"><span class="icon iconify" data-icon="ri:passport-line"></span></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="Junwei LI"><img width="96" loading="lazy" src="/images/head1.jpg" alt="Junwei LI"></a><div class="site-author-name"><a href="/about/">Junwei LI</a></div><span class="site-name">Natika_s World of Game Designing</span><sub class="site-subtitle">I wanna be the BEST GAME DESIGNER.</sub><div class="site-description">a personal blog for sharing my thoughts about the GREATEST GAMES</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="Home"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:home-4-line"></span></span></a><div class="site-state-item"><a href="/archives/" title="Archives"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:archive-line"></span></span><span class="site-state-item-count">12</span></a></div><div class="site-state-item"><a href="/categories/" title="Categories"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:folder-2-line"></span></span><span class="site-state-item-count">2</span></a></div><div class="site-state-item"><a href="/tags/" title="Tags"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="site-state-item-count">3</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:settings-line"></span></span></a></nav><hr style="margin-bottom:0.5rem"><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><span class="icon iconify" data-icon="ri:genderless-line"></span></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><span class="icon iconify" data-icon="ri:contrast-2-line"></span></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E4%B8%80%E3%80%81%E6%B8%B8%E6%88%8F%E4%B8%AD%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%C2%B7%E5%86%B3%E7%AD%96%E4%B8%8E%E6%90%9C%E7%B4%A2"><span class="toc-number">1.</span> <span class="toc-text">十一、游戏中的人工智能·决策与搜索</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E7%AE%80%E8%BF%B0"><span class="toc-number">1.1.</span> <span class="toc-text">关于人工智能的简述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E5%9F%BA%E7%A1%80"><span class="toc-number">1.1.1.</span> <span class="toc-text">人工智能的基础</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AD%A6%E7%A7%91%E7%9A%84%E5%A4%A7%E8%87%B4%E5%88%86%E7%B1%BB"><span class="toc-number">1.1.2.</span> <span class="toc-text">人工智能学科的大致分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%AE%E5%89%8D%E6%B8%B8%E6%88%8FAI%E7%9A%84%E8%83%8C%E6%99%AF"><span class="toc-number">1.1.3.</span> <span class="toc-text">目前游戏AI的背景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E4%B8%89%E7%A7%8D%E5%88%86%E7%B1%BB"><span class="toc-number">1.1.4.</span> <span class="toc-text">机器学习的三种分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%97%A5%E5%B8%B8%E5%BA%94%E7%94%A8"><span class="toc-number">1.1.5.</span> <span class="toc-text">机器学习的日常应用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%B3%E7%AD%96"><span class="toc-number">1.2.</span> <span class="toc-text">决策</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%8E%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E9%97%AE%E9%A2%98%E5%BC%80%E5%A7%8B"><span class="toc-number">1.2.1.</span> <span class="toc-text">从一个简单的问题开始</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%B3%E7%AD%96%E6%A0%91%EF%BC%88Decision-Tree%EF%BC%89"><span class="toc-number">1.2.2.</span> <span class="toc-text">决策树（Decision Tree）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%86%B5%EF%BC%88Entropy%EF%BC%89"><span class="toc-number">1.2.3.</span> <span class="toc-text">熵（Entropy）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E5%A2%9E%E7%9B%8A"><span class="toc-number">1.2.4.</span> <span class="toc-text">信息增益</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.</span> <span class="toc-text">搜索</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%EF%BC%88State%EF%BC%89%E4%B8%8E%E8%A1%8C%E5%8A%A8%EF%BC%88Action%EF%BC%89"><span class="toc-number">1.3.1.</span> <span class="toc-text">状态（State）与行动（Action）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E7%A9%BA%E9%97%B4%E5%9B%BE"><span class="toc-number">1.3.2.</span> <span class="toc-text">状态空间图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2%E6%A0%91%EF%BC%88%E6%B8%B8%E6%88%8FAI%E6%A0%B8%E5%BF%83%EF%BC%89"><span class="toc-number">1.3.3.</span> <span class="toc-text">搜索树（游戏AI核心）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E4%BA%8E%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.4.</span> <span class="toc-text">基于搜索树的搜索</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%90%9C%E7%B4%A2%E6%96%B9%E6%B3%95"><span class="toc-number">1.3.5.</span> <span class="toc-text">系统的搜索方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%EF%BC%88%E7%BA%B5%E5%9E%8B%EF%BC%89%E6%90%9C%E7%B4%A2-Depth-first-search-DFS"><span class="toc-number">1.3.6.</span> <span class="toc-text">深度优先（纵型）搜索-Depth-first search (DFS)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Depth-first-search-DFS-%E7%AE%97%E6%B3%95%E8%B7%AF%E5%BE%84"><span class="toc-number">1.3.7.</span> <span class="toc-text">Depth-first search (DFS) 算法路径</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DFS%E7%9A%84%E7%89%B9%E5%BE%81"><span class="toc-number">1.3.8.</span> <span class="toc-text">DFS的特征</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%EF%BC%88%E6%A8%AA%E5%9E%8B%EF%BC%89%E6%90%9C%E7%B4%A2-Breadth-first-search-BFS"><span class="toc-number">1.3.9.</span> <span class="toc-text">广度优先（横型）搜索-Breadth-first search (BFS)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Breadth-first-search-BFS-%E7%AE%97%E6%B3%95%E8%B7%AF%E5%BE%84"><span class="toc-number">1.3.10.</span> <span class="toc-text">Breadth-first search (BFS)算法路径</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#BFS%E7%9A%84%E7%89%B9%E5%BE%81"><span class="toc-number">1.3.11.</span> <span class="toc-text">BFS的特征</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9B%B6%E5%92%8C%E6%B8%B8%E6%88%8F"><span class="toc-number">1.3.12.</span> <span class="toc-text">零和游戏</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%E5%87%BD%E6%95%B0"><span class="toc-number">1.3.13.</span> <span class="toc-text">评价函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MINMAX-Tree"><span class="toc-number">1.3.14.</span> <span class="toc-text">MINMAX Tree</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%BF%E7%AD%BE-11-1"><span class="toc-number">1.4.</span> <span class="toc-text">便签-11.1</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#MINMAX%E6%B3%95%E7%89%B9%E5%BE%81"><span class="toc-number">1.4.1.</span> <span class="toc-text">MINMAX法特征</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%CE%B1%CE%B2%E6%B3%95"><span class="toc-number">1.4.2.</span> <span class="toc-text">αβ法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%CE%B1%CE%B2%E6%B3%95%EF%BC%88-alpha-beta-pruning%EF%BC%89%E7%9A%84%E6%95%88%E7%8E%87%E5%8C%96"><span class="toc-number">1.4.3.</span> <span class="toc-text">αβ法（αβ\alpha\betaαβ pruning）的效率化</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%96%B9%E6%B3%95"><span class="toc-number">1.5.</span> <span class="toc-text">蒙特卡洛方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%89%E4%BA%9B%E6%83%85%E5%86%B5%E4%B8%8B%E5%BE%88%E9%9A%BE%E6%8F%8F%E8%BF%B0%E7%8A%B6%E6%80%81%E8%AF%84%E4%BB%B7%E5%87%BD%E6%95%B0"><span class="toc-number">1.5.1.</span> <span class="toc-text">有些情况下很难描述状态评价函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%B3%95-Monte-Carlo-method-MC"><span class="toc-number">1.5.2.</span> <span class="toc-text">蒙特卡洛法 (Monte Carlo method, MC)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%B3%95%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B%EF%BC%9A%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87-pi"><span class="toc-number">1.5.3.</span> <span class="toc-text">蒙特卡洛法应用实例：计算圆周率π\piπ</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%8E%A2%E7%B4%A2%E6%A0%91%E7%9A%84%E6%84%8F%E4%B9%89"><span class="toc-number">1.5.4.</span> <span class="toc-text">蒙特卡洛探索树的意义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%B3%95%E5%92%8C%E6%B8%B8%E6%88%8F"><span class="toc-number">1.5.5.</span> <span class="toc-text">蒙特卡洛法和游戏</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%B3%95%E7%9A%84%E7%89%B9%E5%BE%81"><span class="toc-number">1.5.6.</span> <span class="toc-text">蒙特卡洛法的特征</span></a></li></ol></li></ol></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article" style="--smc-primary:#0078E7;"><link itemprop="mainEntityOfPage" href="https://NandCpointFM.github.io/2026/04/17/DaoLun11/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Junwei LI"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Natika_s World of Game Designing"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">关于《游戏学导论》的研学记录与个人思考 - ( 11 )</h1><div class="post-meta"><div class="post-time"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-line"></span></span> <time title="Created: 2026-04-17 13:00:00" itemprop="dateCreated datePublished" datetime="2026-04-17T13:00:00+08:00">2026-04-17</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-2-line"></span></span> <time title="Modified: 2026-04-18 13:56:24" itemprop="dateModified" datetime="2026-04-18T13:56:24+08:00">2026-04-18</time></div><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><span class="icon iconify" data-icon="ri:folder-line"></span></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">游戏设计</span></a></span> > <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1/%E7%9F%A5%E8%AF%86%E8%BE%93%E5%85%A5/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">知识输入</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag-item" href="/tags/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">游戏设计</span></a><a class="tag-item" href="/tags/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">理论知识</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><ul>
 <li><em>参考资料：华中科技大学-熊硕《游戏学导论》（系列课程）</em></li>
 <li><em>本系列博客中，未标注“思考”、“便签”的部分，多摘引、校饰自熊硕老师的课件原文。</em></li>
 </ul>
 <span id="more"></span>
-<h2
-id="十一游戏中的人工智能决策与搜索">十一、游戏中的人工智能·决策与搜索</h2>
+<h2 id="十一、游戏中的人工智能·决策与搜索">十一、游戏中的人工智能·决策与搜索</h2>
 <p><em>由于人工智能在游戏中的应用广泛涉及到人工智能学科的相关知识，一节课的时间远远无法涵盖相关所有内容，仅概略性的介绍游戏中的人工智能在游戏中的两大最常见应用——决策与搜索。同样，这一课仍然是相对科普性的，也是本系列的最后一节课。之后的博客更新，笔者或将更多地围绕自身的游戏开发日志、优质游戏的拆解、相关文献与知识的学习等领域进行。</em></p>
 <p><em>此外，需要注意，这一课程发布于2020年，距今已有六年之久，而近年来AI产业发展迅猛，则课程中部分信息或观点有可能已经不完全匹配当下的现状，读者需加以辨析！</em></p>
 <p>人工智能是这个时代的热门话题，而桌面游戏与单机游戏是在所有行业领域中，最早使用人工智能的平台。</p>
 <h3 id="关于人工智能的简述">关于人工智能的简述</h3>
 <h4 id="人工智能的基础">人工智能的基础</h4>
 <p>支撑学科与发展阶段：</p>
-<p><strong>支撑学科（时间线）</strong> * 哲学（BC428——Now） *
-数学（AD800——Now） * 经济学（1776——Now） * 神经科学（1861——Now） *
-心理学（1879——Now） * 计算机工程（1940——Now） * 控制论（1948——Now） *
-语言学（1957——Now）</p>
-<p><strong>发展阶段（时间线）</strong> * 孕育期（1943——1955） *
-诞生（1956） * 早期的热情（1952——1969） * 现实的困境（1966——1973） *
-算法推进（1969——1979） * 工业化（1980——Now） * 神经网络（1986——Now） *
-科学化（1987——Now） * 智能体（1995——Now）</p>
+<p><strong>支撑学科（时间线）</strong></p>
+<ul>
+<li>哲学（BC428——Now）</li>
+<li>数学（AD800——Now）</li>
+<li>经济学（1776——Now）</li>
+<li>神经科学（1861——Now）</li>
+<li>心理学（1879——Now）</li>
+<li>计算机工程（1940——Now）</li>
+<li>控制论（1948——Now）</li>
+<li>语言学（1957——Now）</li>
+</ul>
+<p><strong>发展阶段（时间线）</strong></p>
+<ul>
+<li>孕育期（1943——1955）</li>
+<li>诞生（1956）</li>
+<li>早期的热情（1952——1969）</li>
+<li>现实的困境（1966——1973）</li>
+<li>算法推进（1969——1979）</li>
+<li>工业化（1980——Now）</li>
+<li>神经网络（1986——Now）</li>
+<li>科学化（1987——Now）</li>
+<li>智能体（1995——Now）</li>
+</ul>
 <h4 id="人工智能学科的大致分类">人工智能学科的大致分类</h4>
-<p>其研究方向包括： * 图像处理 * 逻辑推论 * 数据优化 * 探索 *
-自然语言处理 * 机器学习 * Class分类·函数近似分析·回归 * 聚类学习 *
-强化学习 * 深度学习</p>
-<h4 id="目前游戏ai的背景">目前游戏AI的背景</h4>
+<p>其研究方向包括：<br>
+* 图像处理<br>
+* 逻辑推论<br>
+* 数据优化<br>
+* 探索<br>
+* 自然语言处理<br>
+* 机器学习<br>
+* Class分类·函数近似分析·回归<br>
+* 聚类学习<br>
+* 强化学习<br>
+* 深度学习</p>
+<h4 id="目前游戏AI的背景">目前游戏AI的背景</h4>
 <ul>
 <li>游戏AI的两种流派方向：
 <ul>
 <li>电子游戏的AI（企业应用，以有趣为目的）</li>
 <li>桌游的AI（信息科学，以强大为目的）</li>
-</ul></li>
+</ul>
+</li>
 <li>学术论文一般以桌游和强度为研究要素。</li>
 <li>这几年桌游AI不断增强，然后一一被Solved。</li>
 <li>金字塔
@@ -88,28 +106,32 @@ id="十一游戏中的人工智能决策与搜索">十一、游戏中的人工�
 <li>Checker is solved（Schaeffer 2007）</li>
 <li>ボンクラーズ vs 米长邦雄 (2012)</li>
 <li>AlphaGO vs 柯洁 (2017)</li>
-</ul></li>
+</ul>
+</li>
 </ul>
 <h4 id="机器学习的三种分类">机器学习的三种分类</h4>
 <ul>
-<li><strong>监督式学习</strong>
+<li>
+<p><strong>监督式学习</strong></p>
 <ul>
 <li>通过给予一个个正确的实例，并依此模式推测新的实例来对后续的正确判断进行学习（比如文字判断）</li>
 <li>输入空间X（判断材料），输出空间Y（判断结果）</li>
-<li>学习数据 <span
-class="math inline"><em>L</em> = {(<em>x</em><sub><em>i</em></sub>, <em>y</em><sub><em>i</em></sub>)}, <em>x</em><sub><em>i</em></sub> ∈ <em>X</em>, <em>y</em><sub><em>i</em></sub> ∈ <em>Y</em></span></li>
-<li>输入对于未知的 <span
-class="math inline"><em>x</em> ∈ <em>X</em></span>，输出合适的 <span
-class="math inline"><em>y</em> ∈ <em>Y</em></span></li>
-</ul></li>
-<li><strong>无监督学习</strong>
+<li>学习数据 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mo>=</mo><mo>{</mo><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo separator="true">,</mo><msub><mi>y</mi><mi>i</mi></msub><mo>)</mo><mo>}</mo><mo separator="true">,</mo><msub><mi>x</mi><mi>i</mi></msub><mo>∈</mo><mi>X</mi><mo separator="true">,</mo><msub><mi>y</mi><mi>i</mi></msub><mo>∈</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">L = \{(x_i, y_i)\}, x_i \in X, y_i \in Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">L</span><span class="mrel">=</span><span class="mopen">{</span><span class="mopen">(</span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mpunct">,</span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.03588em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose">)</span><span class="mclose">}</span><span class="mpunct">,</span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mrel">∈</span><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="mpunct">,</span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.03588em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mrel">∈</span><span class="mord mathit" style="margin-right:0.22222em;">Y</span></span></span></span></li>
+<li>输入对于未知的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x \in X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="base textstyle uncramped"><span class="mord mathit">x</span><span class="mrel">∈</span><span class="mord mathit" style="margin-right:0.07847em;">X</span></span></span></span>，输出合适的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi><mo>∈</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">y \in Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mrel">∈</span><span class="mord mathit" style="margin-right:0.22222em;">Y</span></span></span></span></li>
+</ul>
+</li>
+<li>
+<p><strong>无监督学习</strong></p>
 <ul>
 <li>不给予正确的个案，通过数据间的关系进行学习（比如聚类学习）</li>
-</ul></li>
-<li><strong>强化学习</strong>
+</ul>
+</li>
+<li>
+<p><strong>强化学习</strong></p>
 <ul>
 <li>根据环境和行动方案，给予奖励或惩罚的刺激下，让对象逐步形成对刺激的预期，产生能获得最大利益的习惯性行为（机器人）</li>
-</ul></li>
+</ul>
+</li>
 </ul>
 <h4 id="机器学习的日常应用">机器学习的日常应用</h4>
 <ul>
@@ -125,89 +147,90 @@ class="math inline"><em>y</em> ∈ <em>Y</em></span></li>
 <h3 id="决策">决策</h3>
 <h4 id="从一个简单的问题开始">从一个简单的问题开始</h4>
 <p>以《Akinator》（又称《网络天才》）为例，其可以对玩家提出一系列问题，并根据玩家的回答猜测到玩家心中所想的人物，可以引出决策树。</p>
-<h4 id="决策树decision-tree">决策树（Decision Tree）</h4>
+<h4 id="决策树（Decision-Tree）">决策树（Decision Tree）</h4>
 <ul>
 <li>类似于流程图；</li>
 <li>通过If-then规则集合决定输出；</li>
-<li>Eager
-learning（积极学习）的一种，需要事先进行学习，但是一旦学习后使用效率高；</li>
+<li>Eager learning（积极学习）的一种，需要事先进行学习，但是一旦学习后使用效率高；</li>
 <li>决策树模型对人来说更容易理解，因此该模型常常被使用；
 <ul>
 <li>也是最基础的一种人工智能模型；</li>
-</ul></li>
+</ul>
+</li>
 <li>主要在离散输出的情况下使用；</li>
 <li>避免无意义的决策树：
 <ul>
 <li>错误的决策</li>
 <li>冗余的决策</li>
-</ul></li>
+</ul>
+</li>
 <li>决策树的学习：
 <ul>
 <li>考虑如何分割样本，才能使学习效果最佳。</li>
 <li>将杂乱不堪的熵（Entropy）进行定量化、最小化。</li>
-</ul></li>
 </ul>
-<h4 id="熵entropy">熵（Entropy）</h4>
+</li>
+</ul>
+<h4 id="熵（Entropy）">熵（Entropy）</h4>
 <ul>
-<li><p>以只有正例和负例的二分场合为例子</p></li>
-<li><p>正例的占比记为 <span
-class="math inline"><em>p</em><sub>+</sub></span>，负例的占比记为 <span
-class="math inline"><em>p</em><sub>−</sub></span></p></li>
-<li><p>熵的计算公式： <span
-class="math display">Entropy = −<em>p</em><sub>+</sub>log<sub>2</sub><em>p</em><sub>+</sub> − <em>p</em><sub>−</sub>log<sub>2</sub><em>p</em><sub>−</sub></span></p></li>
-<li><p>示例：7例中正例占了4例，负例占3例</p>
+<li>以只有正例和负例的二分场合为例子</li>
+<li>正例的占比记为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>p</mi><mo>+</mo></msub></mrow><annotation encoding="application/x-tex">p_+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.638891em;vertical-align:-0.208331em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">p</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord">+</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>，负例的占比记为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>p</mi><mo>−</mo></msub></mrow><annotation encoding="application/x-tex">p_-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.638891em;vertical-align:-0.208331em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">p</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord">−</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></li>
+<li>熵的计算公式：</li>
+</ul>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext><mi mathvariant="normal">E</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">y</mi></mtext><mo>=</mo><mo>−</mo><msub><mi>p</mi><mo>+</mo></msub><msub><mi>log</mi><mn>2</mn></msub><msub><mi>p</mi><mo>+</mo></msub><mo>−</mo><msub><mi>p</mi><mo>−</mo></msub><msub><mi>log</mi><mn>2</mn></msub><msub><mi>p</mi><mo>−</mo></msub></mrow><annotation encoding="application/x-tex">\text{Entropy} = -p_+ \log_2 p_+ - p_- \log_2 p_-
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.9388799999999999em;vertical-align:-0.24444em;"></span><span class="base displaystyle textstyle uncramped"><span class="text mord displaystyle textstyle uncramped"><span class="mord mathrm">E</span><span class="mord mathrm">n</span><span class="mord mathrm">t</span><span class="mord mathrm">r</span><span class="mord mathrm">o</span><span class="mord mathrm">p</span><span class="mord mathrm" style="margin-right:0.01389em;">y</span></span><span class="mrel">=</span><span class="mord">−</span><span class="mord"><span class="mord mathit">p</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord">+</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="vlist"><span style="top:0.24444em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord"><span class="mord mathit">p</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord">+</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mbin">−</span><span class="mord"><span class="mord mathit">p</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord">−</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="vlist"><span style="top:0.24444em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord"><span class="mord mathit">p</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord">−</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></p>
 <ul>
-<li><span class="math inline"><em>p</em><sub>+</sub> = 4/7</span>，<span
-class="math inline"><em>p</em><sub>−</sub> = 3/7</span></li>
-<li>计算： <span
-class="math display">Entropy ≈ −0.571 × (−0.807) − 0.429 × (−1.222) ≈ 0.985</span></li>
-</ul></li>
-<li><p>关键特性：</p>
+<li>示例：7例中正例占了4例，负例占3例
 <ul>
-<li><span class="math inline"><em>p</em></span> 在接近 <span
-class="math inline">0</span> 或者 <span class="math inline">1</span>
-的时候，熵就越接近于 <span class="math inline">0</span></li>
-<li>当 <span class="math inline"><em>p</em></span> 越接近 <span
-class="math inline">0.5</span>，则熵越接近 <span
-class="math inline">1</span></li>
-</ul></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>p</mi><mo>+</mo></msub><mo>=</mo><mn>4</mn><mi mathvariant="normal">/</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">p_+ = 4/7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">p</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord">+</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mrel">=</span><span class="mord mathrm">4</span><span class="mord mathrm">/</span><span class="mord mathrm">7</span></span></span></span>，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>p</mi><mo>−</mo></msub><mo>=</mo><mn>3</mn><mi mathvariant="normal">/</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">p_- = 3/7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">p</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord">−</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mrel">=</span><span class="mord mathrm">3</span><span class="mord mathrm">/</span><span class="mord mathrm">7</span></span></span></span></li>
+<li>计算：</li>
+</ul>
+</li>
+</ul>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext><mi mathvariant="normal">E</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">y</mi></mtext><mo>≈</mo><mo>−</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>5</mn><mn>7</mn><mn>1</mn><mo>×</mo><mo>(</mo><mo>−</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>8</mn><mn>0</mn><mn>7</mn><mo>)</mo><mo>−</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>4</mn><mn>2</mn><mn>9</mn><mo>×</mo><mo>(</mo><mo>−</mo><mn>1</mn><mi mathvariant="normal">.</mi><mn>2</mn><mn>2</mn><mn>2</mn><mo>)</mo><mo>≈</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>9</mn><mn>8</mn><mn>5</mn></mrow><annotation encoding="application/x-tex">\text{Entropy} \approx -0.571 \times (-0.807) - 0.429 \times (-1.222) \approx 0.985
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base displaystyle textstyle uncramped"><span class="text mord displaystyle textstyle uncramped"><span class="mord mathrm">E</span><span class="mord mathrm">n</span><span class="mord mathrm">t</span><span class="mord mathrm">r</span><span class="mord mathrm">o</span><span class="mord mathrm">p</span><span class="mord mathrm" style="margin-right:0.01389em;">y</span></span><span class="mrel">≈</span><span class="mord">−</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">5</span><span class="mord mathrm">7</span><span class="mord mathrm">1</span><span class="mbin">×</span><span class="mopen">(</span><span class="mord">−</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">8</span><span class="mord mathrm">0</span><span class="mord mathrm">7</span><span class="mclose">)</span><span class="mbin">−</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">4</span><span class="mord mathrm">2</span><span class="mord mathrm">9</span><span class="mbin">×</span><span class="mopen">(</span><span class="mord">−</span><span class="mord mathrm">1</span><span class="mord mathrm">.</span><span class="mord mathrm">2</span><span class="mord mathrm">2</span><span class="mord mathrm">2</span><span class="mclose">)</span><span class="mrel">≈</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">9</span><span class="mord mathrm">8</span><span class="mord mathrm">5</span></span></span></span></span></p>
+<ul>
+<li>关键特性：
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">p</span></span></span></span> 在接近 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">0</span></span></span></span> 或者 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span></span></span></span> 的时候，熵就越接近于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">0</span></span></span></span></li>
+<li>当 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">p</span></span></span></span> 越接近 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn><mi mathvariant="normal">.</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">0.5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">5</span></span></span></span>，则熵越接近 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span></span></span></span></li>
+</ul>
+</li>
 </ul>
 <h4 id="信息增益">信息增益</h4>
 <ul>
-<li><p>以某种条件，将数据集 <span
-class="math inline"><em>S</em> → {<em>S</em><sub><em>i</em></sub>}</span>
-进行分割，具体能减低多少的熵： <span class="math display">$$
-\text{Gain} = \text{Entropy}(S) - \frac{1}{|S|} \sum |S_i|
-\text{Entropy}(S_i)
-$$</span></p></li>
-<li><p>如果将 <span
-class="math inline"><em>S</em>{○ ○ ○ ○ × × ×} → <em>S</em>1{○ ○ ○}, <em>S</em>2{○ × ××}</span>
-进行分割。</p>
+<li>以某种条件，将数据集 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mo>→</mo><mo>{</mo><msub><mi>S</mi><mi>i</mi></msub><mo>}</mo></mrow><annotation encoding="application/x-tex">S \to \{S_i\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mrel">→</span><span class="mopen">{</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose">}</span></span></span></span> 进行分割，具体能减低多少的熵：</li>
+</ul>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext><mi mathvariant="normal">G</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi></mtext><mo>=</mo><mtext><mi mathvariant="normal">E</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">y</mi></mtext><mo>(</mo><mi>S</mi><mo>)</mo><mo>−</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mi mathvariant="normal">∣</mi><mi>S</mi><mi mathvariant="normal">∣</mi></mrow></mfrac><mo>∑</mo><mi mathvariant="normal">∣</mi><msub><mi>S</mi><mi>i</mi></msub><mi mathvariant="normal">∣</mi><mtext><mi mathvariant="normal">E</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">y</mi></mtext><mo>(</mo><msub><mi>S</mi><mi>i</mi></msub><mo>)</mo></mrow><annotation encoding="application/x-tex">\text{Gain} = \text{Entropy}(S) - \frac{1}{|S|} \sum |S_i| \text{Entropy}(S_i)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.32144em;"></span><span class="strut bottom" style="height:2.25744em;vertical-align:-0.936em;"></span><span class="base displaystyle textstyle uncramped"><span class="text mord displaystyle textstyle uncramped"><span class="mord mathrm">G</span><span class="mord mathrm">a</span><span class="mord mathrm">i</span><span class="mord mathrm">n</span></span><span class="mrel">=</span><span class="text mord displaystyle textstyle uncramped"><span class="mord mathrm">E</span><span class="mord mathrm">n</span><span class="mord mathrm">t</span><span class="mord mathrm">r</span><span class="mord mathrm">o</span><span class="mord mathrm">p</span><span class="mord mathrm" style="margin-right:0.01389em;">y</span></span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span><span class="mbin">−</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm">∣</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathrm">∣</span></span></span></span><span style="top:-0.2300000000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathrm">1</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="op-symbol large-op mop" style="top:-0.000004999999999977245em;">∑</span><span class="mord mathrm">∣</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mathrm">∣</span><span class="text mord displaystyle textstyle uncramped"><span class="mord mathrm">E</span><span class="mord mathrm">n</span><span class="mord mathrm">t</span><span class="mord mathrm">r</span><span class="mord mathrm">o</span><span class="mord mathrm">p</span><span class="mord mathrm" style="margin-right:0.01389em;">y</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose">)</span></span></span></span></span></p>
 <ul>
-<li><span class="math inline">Entropy(<em>S</em>) = 0.985</span>
-高度混乱。</li>
-<li><span class="math inline">Entropy(<em>S</em>1) = 0</span>
-完全一致。</li>
-<li><span
-class="math inline">Entropy(<em>S</em>2) = −0.25 × (−2) − 0.75 × (−0.415) = 0.811</span>
-此部分依旧有混乱。</li>
-<li><span class="math inline">$\text{Gain} = 0.985 - \frac{3}{7} \times
-(0) - \frac{4}{7} \times (0.811) = 0.522$</span>。</li>
-</ul></li>
-<li><p>熵明显降低。</p></li>
+<li>
+<p>如果将 S\{○○○○×××\} \to S1\{○○○\}, S2\{○×××\} 进行分割。</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext><mi mathvariant="normal">E</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">y</mi></mtext><mo>(</mo><mi>S</mi><mo>)</mo><mo>=</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>9</mn><mn>8</mn><mn>5</mn></mrow><annotation encoding="application/x-tex">\text{Entropy}(S) = 0.985</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="text mord textstyle uncramped"><span class="mord mathrm">E</span><span class="mord mathrm">n</span><span class="mord mathrm">t</span><span class="mord mathrm">r</span><span class="mord mathrm">o</span><span class="mord mathrm">p</span><span class="mord mathrm" style="margin-right:0.01389em;">y</span></span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">9</span><span class="mord mathrm">8</span><span class="mord mathrm">5</span></span></span></span>  高度混乱。</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext><mi mathvariant="normal">E</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">y</mi></mtext><mo>(</mo><mi>S</mi><mn>1</mn><mo>)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\text{Entropy}(S1) = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="text mord textstyle uncramped"><span class="mord mathrm">E</span><span class="mord mathrm">n</span><span class="mord mathrm">t</span><span class="mord mathrm">r</span><span class="mord mathrm">o</span><span class="mord mathrm">p</span><span class="mord mathrm" style="margin-right:0.01389em;">y</span></span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathrm">1</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">0</span></span></span></span>  完全一致。</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext><mi mathvariant="normal">E</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">y</mi></mtext><mo>(</mo><mi>S</mi><mn>2</mn><mo>)</mo><mo>=</mo><mo>−</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>2</mn><mn>5</mn><mo>×</mo><mo>(</mo><mo>−</mo><mn>2</mn><mo>)</mo><mo>−</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>7</mn><mn>5</mn><mo>×</mo><mo>(</mo><mo>−</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>4</mn><mn>1</mn><mn>5</mn><mo>)</mo><mo>=</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>8</mn><mn>1</mn><mn>1</mn></mrow><annotation encoding="application/x-tex">\text{Entropy}(S2) = -0.25 \times (-2) - 0.75 \times (-0.415) = 0.811</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="text mord textstyle uncramped"><span class="mord mathrm">E</span><span class="mord mathrm">n</span><span class="mord mathrm">t</span><span class="mord mathrm">r</span><span class="mord mathrm">o</span><span class="mord mathrm">p</span><span class="mord mathrm" style="margin-right:0.01389em;">y</span></span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathrm">2</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord">−</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">2</span><span class="mord mathrm">5</span><span class="mbin">×</span><span class="mopen">(</span><span class="mord">−</span><span class="mord mathrm">2</span><span class="mclose">)</span><span class="mbin">−</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">7</span><span class="mord mathrm">5</span><span class="mbin">×</span><span class="mopen">(</span><span class="mord">−</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">4</span><span class="mord mathrm">1</span><span class="mord mathrm">5</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">8</span><span class="mord mathrm">1</span><span class="mord mathrm">1</span></span></span></span>  此部分依旧有混乱。</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext><mi mathvariant="normal">G</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi></mtext><mo>=</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>9</mn><mn>8</mn><mn>5</mn><mo>−</mo><mfrac><mrow><mn>3</mn></mrow><mrow><mn>7</mn></mrow></mfrac><mo>×</mo><mo>(</mo><mn>0</mn><mo>)</mo><mo>−</mo><mfrac><mrow><mn>4</mn></mrow><mrow><mn>7</mn></mrow></mfrac><mo>×</mo><mo>(</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>8</mn><mn>1</mn><mn>1</mn><mo>)</mo><mo>=</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>5</mn><mn>2</mn><mn>2</mn></mrow><annotation encoding="application/x-tex">\text{Gain} = 0.985 - \frac{3}{7} \times (0) - \frac{4}{7} \times (0.811) = 0.522</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.845108em;"></span><span class="strut bottom" style="height:1.190108em;vertical-align:-0.345em;"></span><span class="base textstyle uncramped"><span class="text mord textstyle uncramped"><span class="mord mathrm">G</span><span class="mord mathrm">a</span><span class="mord mathrm">i</span><span class="mord mathrm">n</span></span><span class="mrel">=</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">9</span><span class="mord mathrm">8</span><span class="mord mathrm">5</span><span class="mbin">−</span><span class="mord reset-textstyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.345em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathrm">7</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.394em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">3</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mbin">×</span><span class="mopen">(</span><span class="mord mathrm">0</span><span class="mclose">)</span><span class="mbin">−</span><span class="mord reset-textstyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.345em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathrm">7</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.394em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">4</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mbin">×</span><span class="mopen">(</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">8</span><span class="mord mathrm">1</span><span class="mord mathrm">1</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">5</span><span class="mord mathrm">2</span><span class="mord mathrm">2</span></span></span></span>。</li>
+</ul>
+</li>
+<li>
+<p>熵明显降低。</p>
+</li>
 </ul>
 <h3 id="搜索">搜索</h3>
 <p>思考：人工智能是怎么去玩Puzzle和Game的？</p>
-<pre><code>游戏在处理信息时分为很多种，比如：单人、双人、多人游戏，或者信息完全公开（围棋）、信息不完全（DOTA2），或者零和（象棋）与非零和（战争——日常“游戏”），或者回合制与即时制（还有半即时制）。其中单人的、信息完全公开的、零和的、回合制的游戏最为简单。而之前不断强调“关注桌游”，是因为桌游往往是“多人的、信息完全公开的、零和的、回合制的”（当然有例外，这里只是一般结论）。</code></pre>
+<pre><code>游戏在处理信息时分为很多种，比如：单人、双人、多人游戏，或者信息完全公开（围棋）、信息不完全（DOTA2），或者零和（象棋）与非零和（战争——日常“游戏”），或者回合制与即时制（还有半即时制）。其中单人的、信息完全公开的、零和的、回合制的游戏最为简单。而之前不断强调“关注桌游”，是因为桌游往往是“多人的、信息完全公开的、零和的、回合制的”（当然有例外，这里只是一般结论）。
+</code></pre>
 <p>但是人工智能在思考这些游戏问题的时候有万变不离其宗的方法：准备一定的后手策略，基于某种算法评价所有的后手策略的价值，搜索所有的后手并找出最优解。这一方式简单粗暴，但非常计算机、非常有效。</p>
-<h4 id="状态state与行动action">状态（State）与行动（Action）</h4>
+<h4 id="状态（State）与行动（Action）">状态（State）与行动（Action）</h4>
 <ul>
 <li>基于当前盘面所决定的必要信息被称为状态，对于可能的全部状态被称为状态空间。</li>
 <li>导致状态发生变化的选择与博弈策略称为行动。
 <ul>
 <li>这里的“发生变化”的状态不仅仅是指棋盘本身的状态，某些情况下包括自己的回合顺序、角色状态、持子状态的变化也算。</li>
 <li>状态空间越大，行动理论上就越难以抉择。</li>
-</ul></li>
+</ul>
+</li>
 </ul>
 <h4 id="状态空间图">状态空间图</h4>
 <ul>
@@ -216,10 +239,11 @@ class="math inline">Entropy(<em>S</em>2) = −0.25 × (−2) − 0.7
 <ul>
 <li>将状态用节点（Node）表示；</li>
 <li>将变化的行动操作用树枝（Edge）表示；</li>
-</ul></li>
+</ul>
+</li>
 <li>根据得到的状态空间图。我们开始寻找路径从起点到合适的终点</li>
 </ul>
-<h4 id="搜索树游戏ai核心">搜索树（游戏AI核心）</h4>
+<h4 id="搜索树（游戏AI核心）">搜索树（游戏AI核心）</h4>
 <ul>
 <li>将搜索空间用树状结构进行表现的图称之为搜索树。</li>
 <li>节点代表状态，枝代表行动</li>
@@ -233,7 +257,8 @@ class="math inline">Entropy(<em>S</em>2) = −0.25 × (−2) − 0.7
 <li>从候补列表中调看状态、选择着手。</li>
 <li>展开新的节点，更新列表。</li>
 <li>重复此流程。</li>
-</ul></li>
+</ul>
+</li>
 </ul>
 <h4 id="系统的搜索方法">系统的搜索方法</h4>
 <ul>
@@ -241,17 +266,17 @@ class="math inline">Entropy(<em>S</em>2) = −0.25 × (−2) − 0.7
 <li>确保不会重复或者漏搜。
 <ul>
 <li>那么就有一个衍生问题，按照怎样的搜索方法或顺序可以保证以上的需求？</li>
-</ul></li>
+</ul>
+</li>
 <li>根据“候补列表”所选择的目标决定搜索顺序。</li>
 <li>主要有两种基础思路：
 <ul>
 <li>深度优先（纵型）搜索。</li>
 <li>广度优先（横型）搜索。</li>
-</ul></li>
 </ul>
-<h4
-id="深度优先纵型搜索-depth-first-search-dfs">深度优先（纵型）搜索-Depth-first
-search (DFS)</h4>
+</li>
+</ul>
+<h4 id="深度优先（纵型）搜索-Depth-first-search-DFS">深度优先（纵型）搜索-Depth-first search (DFS)</h4>
 <ul>
 <li>沿着子节点，不断地向更深的枝干进行遍历</li>
 <li>如果子节点有复数个，那么先从其中一个子节点开始一直往下搜寻到其末端为止，再对下一个子节点进行遍历</li>
@@ -260,10 +285,10 @@ search (DFS)</h4>
 <li>“遇到分叉路口了，怎么办呢……总之先走左边的吧”</li>
 <li>“又遇到分叉路了，选择左边的路继续前进”</li>
 <li>“啊，死路不通，那么就退回最后的分岔路口，选择另外一条路”</li>
-</ul></li>
 </ul>
-<h4 id="depth-first-search-dfs-算法路径">Depth-first search (DFS)
-算法路径</h4>
+</li>
+</ul>
+<h4 id="Depth-first-search-DFS-算法路径">Depth-first search (DFS) 算法路径</h4>
 <p>对于给定搜索树：</p>
 <pre><code>· 起始节点（Start）：S
 · 目标节点（Goal）：G
@@ -272,88 +297,127 @@ search (DFS)</h4>
  · S的子节点：A、B
  · A的子节点：C、D
  · B的子节点：E、F
- · E的子节点：G、H</code></pre>
+ · E的子节点：G、H
+</code></pre>
 <ul>
-<li><p>DFS搜索顺序为 <span
-class="math display"><em>S</em> → <em>A</em> → <em>C</em> → <em>D</em> → <em>B</em> → <em>E</em> → <em>G</em></span></p></li>
-<li><p>open列表变化过程 <span
-class="math display">open : (<em>S</em>) → (<em>A</em><em>B</em>) → (<em>C</em><em>D</em><em>B</em>) → (<em>D</em><em>B</em>) → (<em>B</em>) → (<em>E</em><em>F</em>) → (<em>G</em><em>H</em><em>F</em>)</span></p></li>
-<li><p>closed列表变化过程 <span
-class="math display">closed : () → (<em>S</em>) → (<em>A</em><em>S</em>) → (<em>C</em><em>A</em><em>S</em>) → (<em>D</em><em>C</em><em>A</em><em>S</em>) → (<em>B</em><em>D</em><em>C</em><em>A</em><em>S</em>) → (<em>E</em><em>B</em><em>D</em><em>C</em><em>A</em><em>S</em>)</span></p></li>
-<li><p><strong>Open list</strong></p>
+<li>DFS搜索顺序为</li>
+</ul>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mo>→</mo><mi>A</mi><mo>→</mo><mi>C</mi><mo>→</mo><mi>D</mi><mo>→</mo><mi>B</mi><mo>→</mo><mi>E</mi><mo>→</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">S \to A \to C \to D \to B \to E \to G
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mrel">→</span><span class="mord mathit">A</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mrel">→</span><span class="mord mathit">G</span></span></span></span></span></p>
+<ul>
+<li>open列表变化过程</li>
+</ul>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext><mi mathvariant="normal">o</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi></mtext><mo>:</mo><mo>(</mo><mi>S</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>A</mi><mi>B</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>C</mi><mi>D</mi><mi>B</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>D</mi><mi>B</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>B</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>E</mi><mi>F</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>G</mi><mi>H</mi><mi>F</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\text{open}: (S) \to (AB) \to (CDB) \to (DB) \to (B) \to (EF) \to (GHF)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base displaystyle textstyle uncramped"><span class="text mord displaystyle textstyle uncramped"><span class="mord mathrm">o</span><span class="mord mathrm">p</span><span class="mord mathrm">e</span><span class="mord mathrm">n</span></span><span class="mrel">:</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit">G</span><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mclose">)</span></span></span></span></span></p>
+<ul>
+<li>closed列表变化过程</li>
+</ul>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext><mi mathvariant="normal">c</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi></mtext><mo>:</mo><mo>(</mo><mo>)</mo><mo>→</mo><mo>(</mo><mi>S</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>A</mi><mi>S</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>C</mi><mi>A</mi><mi>S</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>D</mi><mi>C</mi><mi>A</mi><mi>S</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>B</mi><mi>D</mi><mi>C</mi><mi>A</mi><mi>S</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>E</mi><mi>B</mi><mi>D</mi><mi>C</mi><mi>A</mi><mi>S</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\text{closed}: () \to (S) \to (AS) \to (CAS) \to (DCAS) \to (BDCAS) \to (EBDCAS)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base displaystyle textstyle uncramped"><span class="text mord displaystyle textstyle uncramped"><span class="mord mathrm">c</span><span class="mord mathrm">l</span><span class="mord mathrm">o</span><span class="mord mathrm">s</span><span class="mord mathrm">e</span><span class="mord mathrm">d</span></span><span class="mrel">:</span><span class="mopen">(</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span></span></span></span></span></p>
+<ul>
+<li><strong>Open list</strong>
 <ul>
 <li>保存计算中的节点</li>
-</ul></li>
-<li><p><strong>Closed list</strong></p>
+</ul>
+</li>
+<li><strong>Closed list</strong>
 <ul>
 <li>保存计算完成的节点</li>
-</ul></li>
 </ul>
-<h4 id="dfs的特征">DFS的特征</h4>
+</li>
+</ul>
+<h4 id="DFS的特征">DFS的特征</h4>
 <ul>
-<li>不断地深入进行搜索
+<li>
+<p>不断地深入进行搜索</p>
 <ul>
 <li>优点：适用于搜索并迅速发现埋得很深的目标节点</li>
 <li>缺点：对于一些埋得很浅的目标节点搜索效率不高</li>
 <li>实际上，计算机机能的限制也导致DFS不能无限制地深度搜索，会设置深度限制</li>
 <li>有回溯操作（数据结构上，反复入栈、出栈），运行速度慢</li>
-</ul></li>
-<li>内存使用量小
+</ul>
+</li>
+<li>
+<p>内存使用量小</p>
 <ul>
 <li>防止胡乱地进行无限制无目的搜索</li>
 <li>最重要的优点——相对广度优先搜索</li>
-</ul></li>
-<li>不保证得到的解是最优解
+</ul>
+</li>
+<li>
+<p>不保证得到的解是最优解</p>
 <ul>
 <li>当深度设置不合理的时候甚至找不到解</li>
 <li>这是DFS最大的缺点</li>
-</ul></li>
 </ul>
-<h4
-id="广度优先横型搜索-breadth-first-search-bfs">广度优先（横型）搜索-Breadth-first
-search (BFS)</h4>
+</li>
+</ul>
+<h4 id="广度优先（横型）搜索-Breadth-first-search-BFS">广度优先（横型）搜索-Breadth-first search (BFS)</h4>
 <ul>
-<li><p>核心遍历规则：首先搜索全部深度为1的子节点，接着搜索全部深度为2的孙节点，再接着搜索全部深度为3的曾孙节点。如此反复，直到每一层被遍历完毕后，进入下一层。</p></li>
-<li><p>博弈论应用示例（如何给自己带来最大利益）</p>
+<li>
+<p>核心遍历规则：首先搜索全部深度为1的子节点，接着搜索全部深度为2的孙节点，再接着搜索全部深度为3的曾孙节点。如此反复，直到每一层被遍历完毕后，进入下一层。</p>
+</li>
+<li>
+<p>博弈论应用示例（如何给自己带来最大利益）</p>
 <ul>
 <li>先思考遍历自己全部可能的第一步行动</li>
 <li>再思考根据自己的行动，对手可能会做出的下一步全部反应</li>
-</ul></li>
-<li><p>迷宫示例</p>
+</ul>
+</li>
+<li>
+<p>迷宫示例</p>
 <ul>
 <li>“你的面前有个分叉路口”</li>
 <li>先检索这几个分叉路口</li>
 <li>接着再看分叉路口的各自岔路</li>
 <li>仅适用于开了上帝视角的纸迷宫</li>
-</ul></li>
 </ul>
-<h4 id="breadth-first-search-bfs算法路径">Breadth-first search
-(BFS)算法路径</h4>
+</li>
+</ul>
+<h4 id="Breadth-first-search-BFS-算法路径">Breadth-first search (BFS)算法路径</h4>
 <p>对于前文DFS部分提到的示例搜索树：</p>
 <ul>
-<li><p>横型搜索的遍历顺序为 <span
-class="math display"><em>S</em> → <em>A</em> → <em>B</em> → <em>C</em> → <em>D</em> → <em>E</em> → <em>F</em> → <em>G</em></span></p></li>
-<li><p>open列表变化过程 <span
-class="math display">open : (<em>S</em>) → (<em>A</em><em>B</em>) → (<em>B</em><em>C</em><em>D</em>) → (<em>C</em><em>D</em><em>E</em><em>F</em>) → (<em>D</em><em>E</em><em>F</em>) → (<em>E</em><em>F</em>) → (<em>F</em><em>G</em><em>H</em>) → (<em>G</em><em>H</em>)</span></p></li>
-<li><p>close列表变化过程 <span
-class="math display">close : () → (<em>S</em>) → (<em>A</em><em>S</em>) → (<em>B</em><em>A</em><em>S</em>) → (<em>C</em><em>B</em><em>A</em><em>S</em>) → (<em>D</em><em>C</em><em>B</em><em>A</em><em>S</em>) → (<em>E</em><em>D</em><em>C</em><em>B</em><em>A</em><em>S</em>) → (<em>F</em><em>E</em><em>D</em><em>C</em><em>B</em><em>A</em><em>S</em>)</span></p></li>
-<li><p>最终得到的解路径 <span
-class="math display"><em>S</em> → <em>B</em> → <em>E</em> → <em>G</em></span></p></li>
+<li>横型搜索的遍历顺序为</li>
 </ul>
-<h4 id="bfs的特征">BFS的特征</h4>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mo>→</mo><mi>A</mi><mo>→</mo><mi>B</mi><mo>→</mo><mi>C</mi><mo>→</mo><mi>D</mi><mo>→</mo><mi>E</mi><mo>→</mo><mi>F</mi><mo>→</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">S \to A \to B \to C \to D \to E \to F \to G
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mrel">→</span><span class="mord mathit">A</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mrel">→</span><span class="mord mathit">G</span></span></span></span></span></p>
 <ul>
-<li>不断地从浅处节点进行搜索。
+<li>open列表变化过程</li>
+</ul>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext><mi mathvariant="normal">o</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi></mtext><mo>:</mo><mo>(</mo><mi>S</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>A</mi><mi>B</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>B</mi><mi>C</mi><mi>D</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>C</mi><mi>D</mi><mi>E</mi><mi>F</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>D</mi><mi>E</mi><mi>F</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>E</mi><mi>F</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>F</mi><mi>G</mi><mi>H</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>G</mi><mi>H</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\text{open}: (S) \to (AB) \to (BCD) \to (CDEF) \to (DEF) \to (EF) \to (FGH) \to (GH)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base displaystyle textstyle uncramped"><span class="text mord displaystyle textstyle uncramped"><span class="mord mathrm">o</span><span class="mord mathrm">p</span><span class="mord mathrm">e</span><span class="mord mathrm">n</span></span><span class="mrel">:</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mord mathit">G</span><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit">G</span><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="mclose">)</span></span></span></span></span></p>
+<ul>
+<li>close列表变化过程</li>
+</ul>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext><mi mathvariant="normal">c</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mtext><mo>:</mo><mo>(</mo><mo>)</mo><mo>→</mo><mo>(</mo><mi>S</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>A</mi><mi>S</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>B</mi><mi>A</mi><mi>S</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>C</mi><mi>B</mi><mi>A</mi><mi>S</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>D</mi><mi>C</mi><mi>B</mi><mi>A</mi><mi>S</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>E</mi><mi>D</mi><mi>C</mi><mi>B</mi><mi>A</mi><mi>S</mi><mo>)</mo><mo>→</mo><mo>(</mo><mi>F</mi><mi>E</mi><mi>D</mi><mi>C</mi><mi>B</mi><mi>A</mi><mi>S</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\text{close}: () \to (S) \to (AS) \to (BAS) \to (CBAS) \to (DCBAS) \to (EDCBAS) \to (FEDCBAS)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base displaystyle textstyle uncramped"><span class="text mord displaystyle textstyle uncramped"><span class="mord mathrm">c</span><span class="mord mathrm">l</span><span class="mord mathrm">o</span><span class="mord mathrm">s</span><span class="mord mathrm">e</span></span><span class="mrel">:</span><span class="mopen">(</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span><span class="mrel">→</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span></span></span></span></span></p>
+<ul>
+<li>最终得到的解路径</li>
+</ul>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mo>→</mo><mi>B</mi><mo>→</mo><mi>E</mi><mo>→</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">S \to B \to E \to G
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mrel">→</span><span class="mord mathit">G</span></span></span></span></span></p>
+<h4 id="BFS的特征">BFS的特征</h4>
+<ul>
+<li>
+<p>不断地从浅处节点进行搜索。</p>
 <ul>
 <li>优点：适用于简单问题，能迅速发现埋得很浅的目标节点。</li>
 <li>最重要的优点：能用最短方法解决问题。</li>
 <li>特性：保留全部结点，占用空间大；无回溯操作，运行速度快。</li>
-</ul></li>
-<li>需要占用大量内存
+</ul>
+</li>
+<li>
+<p>需要占用大量内存</p>
 <ul>
-<li><p>最致命的缺点：一旦内存不足，搜索就中断。</p></li>
-<li><p>特性：一般需存储产生的所有结点，占用的存储空间要比深度优先搜索大得多，因此，程序设计中必须考虑溢出和节省内存空间的问题。</p>
-<p>所以吃CPU还是吃内存？这是个问题。所谓鱼和熊掌不可兼得，要根据具体硬件情况，以及问题需求来做选择，对简单问题寻求最优解，那就使用横型搜索，对于复杂问题，特别是内存有限制的情况下，使用纵型搜索。</p></li>
-</ul></li>
+<li>
+<p>最致命的缺点：一旦内存不足，搜索就中断。</p>
+</li>
+<li>
+<p>特性：一般需存储产生的所有结点，占用的存储空间要比深度优先搜索大得多，因此，程序设计中必须考虑溢出和节省内存空间的问题。</p>
+<p>所以吃CPU还是吃内存？这是个问题。所谓鱼和熊掌不可兼得，要根据具体硬件情况，以及问题需求来做选择，对简单问题寻求最优解，那就使用横型搜索，对于复杂问题，特别是内存有限制的情况下，使用纵型搜索。</p>
+</li>
+</ul>
+</li>
 </ul>
 <h4 id="零和游戏">零和游戏</h4>
 <ul>
@@ -363,22 +427,23 @@ class="math display"><em>S</em> → <em>B</em> → <em>E</em> → <e
 <ul>
 <li>国际象棋，中国象棋，将棋和围棋。</li>
 <li>也适用于黑白棋，斗兽棋，五子棋等等游戏。</li>
-</ul></li>
+</ul>
+</li>
 <li>核心本质：<strong>零和</strong>，以妨碍对手为最优先操作（其本质就是鼓励“损人利己”）。
 <ul>
 <li>经典参考：冯诺依曼的分饼。</li>
-</ul></li>
+</ul>
+</li>
 </ul>
 <h4 id="评价函数">评价函数</h4>
 <ul>
-<li>展开一定深度的决策树，对于决策树中每个节点的<strong>局面</strong>进行<strong>状态表示</strong>的数学方法，称为<strong>状态评价函数（state
-evaluation function）</strong>。</li>
+<li>展开一定深度的决策树，对于决策树中每个节点的<strong>局面</strong>进行<strong>状态表示</strong>的数学方法，称为<strong>状态评价函数（state evaluation function）</strong>。</li>
 <li>黑白棋场景的核心评价维度：己方棋子数、可合法落子的格子数等。</li>
 <li>象棋场景的核心评价维度：消灭对方棋子的程度、自身王的安全性。</li>
 <li>各类场景的局面判定，可通过阴阳例进行判定。</li>
 <li>评价函数本身的性能优劣，与人工智能的强度直接相关；评价函数的研究也是AI研究的重要组成部分。为了方便起见，本节课直接给出所有状态经过评价函数计算后的参考值。</li>
 </ul>
-<h4 id="minmax-tree"><strong>MINMAX Tree</strong></h4>
+<h4 id="MINMAX-Tree"><strong>MINMAX Tree</strong></h4>
 <ul>
 <li>自己的回合，永远选择最大值的一手。</li>
 <li>对方的回合，永远选择最小值的一手（对方视角对自己而言）。</li>
@@ -388,62 +453,46 @@ evaluation function）</strong>。</li>
 <ul>
 <li>自己回合的节点称为<strong>MAX node</strong>。</li>
 <li>对手回合的节点称为<strong>MIN node</strong>。</li>
-</ul></li>
+</ul>
+</li>
 <li>通常使用纵型搜索模型。</li>
 </ul>
 <blockquote>
-<h3 id="便签-11.1">便签-11.1</h3>
+<h3 id="便签-11-1">便签-11.1</h3>
 <p>MINMAX的精髓在于刻画了与理性对手进行两人完全信息零和动态博弈的决策逻辑——它最终给出的，一定是最坏情况下的最好结果——也就是在理性对手每一步都追求自身收益最大化（也就是零和场景下我方收益最小化）的前提下，我方当前能选到的最优决策。</p>
-<p>它和贪心算法有本质区别：贪心算法只关注当前一步的即时收益，选当前决策节点中收益最大的选项；而MINMAX不关注单步的即时奖励，它会向前遍历完整的决策分支，预判双方后续的所有理性应对，最终通过回溯末端节点的收益
-/ 估值，逐层取极值来确定当前的最优选择。</p>
-<p>这里要补充一个严谨定义：博弈论中，只有博弈终局才能计算唯一确定的“收益”，中间节点的即时得失只能称为
-“即时奖励”；为了表述方便，我们统一用 “收益” 代指奖励。</p>
-<p>需要注意，所谓 “收益（终局的确定结果，或过程中的即时奖励数值）” 与
-“评价函数”
-是两个完全不同的概念。收益是可被计算的确定精确值；而评价函数，是针对无法穷举完整决策树的复杂博弈场景（可被穷举并计算收益的搜索树不需要评价函数），在有限深度搜索的边界上，对未到终局的节点局面，通过特定规则估算其对应终局的期望收益，以此给
-AI 的搜索和决策提供引导的启发式工具。</p>
+<p>它和贪心算法有本质区别：贪心算法只关注当前一步的即时收益，选当前决策节点中收益最大的选项；而MINMAX不关注单步的即时奖励，它会向前遍历完整的决策分支，预判双方后续的所有理性应对，最终通过回溯末端节点的收益 / 估值，逐层取极值来确定当前的最优选择。</p>
+<p>这里要补充一个严谨定义：博弈论中，只有博弈终局才能计算唯一确定的“收益”，中间节点的即时得失只能称为 “即时奖励”；为了表述方便，我们统一用 “收益” 代指奖励。</p>
+<p>需要注意，所谓 “收益（终局的确定结果，或过程中的即时奖励数值）” 与 “评价函数” 是两个完全不同的概念。收益是可被计算的确定精确值；而评价函数，是针对无法穷举完整决策树的复杂博弈场景（可被穷举并计算收益的搜索树不需要评价函数），在有限深度搜索的边界上，对未到终局的节点局面，通过特定规则估算其对应终局的期望收益，以此给 AI 的搜索和决策提供引导的启发式工具。</p>
 </blockquote>
-<h4 id="minmax法特征">MINMAX法特征</h4>
+<h4 id="MINMAX法特征">MINMAX法特征</h4>
 <ul>
 <li>如果通过评价函数给末端节点一个评价值，现实中，就能在搜索限制范围内尽可能找到最优解；数学理论上一定会找到最优解。
 <ul>
 <li>对应概念：Solved Game</li>
-</ul></li>
+</ul>
+</li>
 <li>隐含假设：想象你的对手足够聪明，对手不会永远“最大可能地唯利是图”。</li>
-<li>复杂度问题：如果Branching Factor记为<span
-class="math inline"><em>b</em></span>，搜索深度depth记为<span
-class="math inline"><em>d</em></span>，那么游戏复杂度则为<span
-class="math inline"><em>b</em><sup><em>d</em></sup></span>，随着搜索深度的增加，搜索量会指数级爆炸。
+<li>复杂度问题：如果Branching Factor记为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">b</span></span></span></span>，搜索深度depth记为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">d</span></span></span></span>，那么游戏复杂度则为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>b</mi><mi>d</mi></msup></mrow><annotation encoding="application/x-tex">b^d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.849108em;"></span><span class="strut bottom" style="height:0.849108em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">b</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit">d</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>，随着搜索深度的增加，搜索量会指数级爆炸。
 <ul>
-<li>示例：4×4的黑白棋，节点搜索量为<span
-class="math inline">12!</span>（大约接近5亿）。</li>
-</ul></li>
+<li>示例：4×4的黑白棋，节点搜索量为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mn>2</mn><mo>!</mo></mrow><annotation encoding="application/x-tex">12!</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span><span class="mord mathrm">2</span><span class="mclose">!</span></span></span></span>（大约接近5亿）。</li>
+</ul>
+</li>
 </ul>
 <p>显然，现阶段计算机性能上，我们不可能接受这种强度的搜索量。</p>
 <p>所以游戏人工智能的一个重要研究共组偶，就是尽可能高效地寻找最优解，优化搜索算法，包括使用人文社科专业相关理论去优化，也是文工联合的一种研究手段。</p>
 <h4 id="αβ法"><strong>αβ法</strong></h4>
 <ul>
 <li>计算叶子节点的评价值（通过使用状态评价函数）。</li>
-<li>利用<span class="math inline"><em>α</em><em>β</em></span>法（<span
-class="math inline"><em>α</em><em>β</em></span>剪枝，<span
-class="math inline"><em>α</em><em>β</em></span>
-pruning）剪掉没必要搜索的点。</li>
+<li>利用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">\alpha\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span><span class="mord mathit" style="margin-right:0.05278em;">β</span></span></span></span>法（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">\alpha\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span><span class="mord mathit" style="margin-right:0.05278em;">β</span></span></span></span>剪枝，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">\alpha\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span><span class="mord mathit" style="margin-right:0.05278em;">β</span></span></span></span> pruning）剪掉没必要搜索的点。</li>
 </ul>
-<ol type="1">
+<ol>
 <li>基于纵型搜索中的MINMAX搜索。</li>
-<li>保持MAXnode临时的最大值<span
-class="math inline"><em>α</em></span>，以及MINnode临时的最小值<span
-class="math inline"><em>β</em></span>。</li>
-<li>对于MINnode，<span
-class="math inline"><em>β</em></span>（某个子节点的评价值）小于亲节点的<span
-class="math inline"><em>α</em></span>，那么剩下的子节点就不用搜索了。</li>
-<li>对于MAXnode，<span
-class="math inline"><em>α</em></span>（某个子节点的评价值）大于亲节点的<span
-class="math inline"><em>β</em></span>，那么剩下的子节点也不用搜索了。</li>
+<li>保持MAXnode临时的最大值<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span></span></span></span>，以及MINnode临时的最小值<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05278em;">β</span></span></span></span>。</li>
+<li>对于MINnode，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05278em;">β</span></span></span></span>（某个子节点的评价值）小于亲节点的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span></span></span></span>，那么剩下的子节点就不用搜索了。</li>
+<li>对于MAXnode，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span></span></span></span>（某个子节点的评价值）大于亲节点的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05278em;">β</span></span></span></span>，那么剩下的子节点也不用搜索了。</li>
 </ol>
 <p>思考一个相亲的简单问题就能理解这个复杂的描述。</p>
-<h4 id="αβ法alphabeta-pruning的效率化">αβ法（<span
-class="math inline"><em>α</em><em>β</em></span> pruning）的效率化</h4>
+<h4 id="αβ法（-alpha-beta-pruning）的效率化">αβ法（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">\alpha\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span><span class="mord mathit" style="margin-right:0.05278em;">β</span></span></span></span> pruning）的效率化</h4>
 <ul>
 <li>为了提高效率
 <ul>
@@ -451,20 +500,23 @@ class="math inline"><em>α</em><em>β</em></span> pruning）的效率化</h4>
 <li>如果读出关键手也是研究的重点之一。</li>
 <li>探索模型和顺序就很重要！</li>
 <li>行动评价函数。</li>
-</ul></li>
 </ul>
-<p>[Remi2007]Computing Elo Ratings of Move Patterns in the Game of Go
+</li>
+</ul>
+<p>[Remi2007]Computing Elo Ratings of Move Patterns in the Game of Go<br>
 围棋AI研究的必读论文</p>
 <p>因此，我们说，</p>
-<pre><code>MINMAX搜索树配合各种优化过的搜索算法，理论上可以结局一切固定信息的零和对抗游戏，但是有很多博弈其信息是无法预估的，更不会是固定的——譬如围棋，这时候就需要我们使用另外的手段。</code></pre>
+<pre><code>MINMAX搜索树配合各种优化过的搜索算法，理论上可以结局一切固定信息的零和对抗游戏，但是有很多博弈其信息是无法预估的，更不会是固定的——譬如围棋，这时候就需要我们使用另外的手段。
+</code></pre>
 <h3 id="蒙特卡洛方法">蒙特卡洛方法</h3>
-<h4
-id="有些情况下很难描述状态评价函数">有些情况下很难描述状态评价函数</h4>
+<h4 id="有些情况下很难描述状态评价函数">有些情况下很难描述状态评价函数</h4>
 <ul>
-<li><p>在象棋里面，你可以很容易的根据棋子数目，棋子摆放的局势判断双方的利益得失，以将棋为例：
-<span
-class="math display"><em>f</em>(<em>s</em>) = <em>兵</em> × 10 + <em>马</em> × 40 + ... + <em>炮</em> × 50 + ... + <em>士</em><em>象</em><em>双</em><em>全</em> × 80 + ...</span></p></li>
-<li><p>围棋没法用这个方法实现：</p>
+<li>在象棋里面，你可以很容易的根据棋子数目，棋子摆放的局势判断双方的利益得失，以将棋为例：</li>
+</ul>
+f(s) = 兵 \times 10 + 马 \times 40 + ... + 炮 \times 50 + ... + 士象双全 \times 80 + ...
+
+<ul>
+<li>围棋没法用这个方法实现：
 <ul>
 <li>本质是部落圈地。</li>
 <li>跟棋子本身强度无关。</li>
@@ -473,55 +525,50 @@ class="math display"><em>f</em>(<em>s</em>) = <em>兵</em> × 10 + <
 <li>所谓“形”“势”，即形势。</li>
 <li>300多步，探索树深的可怕，现有计算机绝对做不到这种计算量。</li>
 <li>对这种暧昧的局面，需要有相当的直觉。</li>
-</ul></li>
 </ul>
-<h4 id="蒙特卡洛法-monte-carlo-method-mc">蒙特卡洛法 (Monte Carlo
-method, MC)</h4>
+</li>
+</ul>
+<h4 id="蒙特卡洛法-Monte-Carlo-method-MC">蒙特卡洛法 (Monte Carlo method, MC)</h4>
 <ul>
 <li>通过随机数进行模拟和数值计算的手法。</li>
-<li>约翰·冯诺依曼为了探究原子弹里面的中子物质运动方式，以摩纳哥的赌城Monte
-Carlo来命名这种方法。</li>
+<li>约翰·冯诺依曼为了探究原子弹里面的中子物质运动方式，以摩纳哥的赌城Monte Carlo来命名这种方法。</li>
 <li>摩纳哥公国是世界第二小的国家，被法国包围，整个国家以赌博业为主体，分为四个区，其中一个区的名字就叫蒙特卡洛，可谓是欧洲的澳门/拉斯维加斯。</li>
 <li>蒙特卡洛方法因为和随机数扯上关系，冯诺依曼的这个命名方式也堪称完美。</li>
 <li>但事实上很早就有蒙特卡洛法，只是不叫这个名字而已。</li>
 </ul>
-<h4
-id="蒙特卡洛法应用实例计算圆周率pi">蒙特卡洛法应用实例：计算圆周率<span
-class="math inline"><em>π</em></span></h4>
+<h4 id="蒙特卡洛法应用实例：计算圆周率-pi">蒙特卡洛法应用实例：计算圆周率<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">π</span></span></span></span></h4>
 <ul>
-<li>在如下的正方形内随机打一个点→通过落在圆内的个数求圆周率<span
-class="math inline"><em>π</em></span></li>
-<li>如果打点的行为进行无限次 <span
-class="math display">圆内点个数 : 全个数 = 圆的面积 : 正方形的面积 = <em>π</em>/4 : 1</span></li>
+<li>在如下的正方形内随机打一个点→通过落在圆内的个数求圆周率<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">π</span></span></span></span></li>
+<li>如果打点的行为进行无限次</li>
 </ul>
-<p><strong><em>内部的点——<span
-class="math inline"><em>π</em></span>的值：</em></strong> *
-<em>82个——3.28</em> * <em>802个——3.208</em> *
-<em>7886个——3.1464</em></p>
+\text{圆内点个数}: \text{全个数} = \text{圆的面积}: \text{正方形的面积} = \pi/4: 1
+
+<p><em><strong>内部的点——<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">π</span></span></span></span>的值：</strong></em></p>
+<ul>
+<li><em>82个——3.28</em></li>
+<li><em>802个——3.208</em></li>
+<li><em>7886个——3.1464</em></li>
+</ul>
 <p>不难发现这一值趋于精确——当然，工学方法自然无法与莱布尼茨公式等理学分析来得精确，但好在其具有实践意义。</p>
 <h4 id="蒙特卡洛探索树的意义">蒙特卡洛探索树的意义</h4>
 <ul>
 <li>蒙特卡洛树搜索的意义在于部分解决了MINMAX的两个问题：</li>
 <li>对于没法设计评估函数的游戏，它可以给出一个局面评估，虽然不准，但比没有强。所谓聊胜于无。</li>
 <li>根据它的设计原理，搜索树会较好地自动集中到“更值得搜索的变化”（当然也不一定准）从而去掉不必要的冗余。如果发现一个不错的着法，蒙特卡洛树搜索会较快地把它看到很深，可以说它结合了广度优先搜索和深度优先搜索。</li>
-<li>最后，随着搜索树的自动生长，如果给定足够的计算时间和足够的存储空间，蒙特卡洛树搜索可以保证在足够长的时间后收敛到完美解（类似于求圆周率<span
-class="math inline"><em>π</em></span>）。
+<li>最后，随着搜索树的自动生长，如果给定足够的计算时间和足够的存储空间，蒙特卡洛树搜索可以保证在足够长的时间后收敛到完美解（类似于求圆周率<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">π</span></span></span></span>）。
 <ul>
 <li>为什么跟李世石比赛后，再和柯洁比赛的AlphaGo更强了，不仅是因为AlphaGo会“思考”，而是蒙特卡洛方法的属性。</li>
-</ul></li>
+</ul>
+</li>
 </ul>
 <h4 id="蒙特卡洛法和游戏">蒙特卡洛法和游戏</h4>
 <ul>
 <li>具体算法：</li>
 </ul>
-<ol type="1">
+<ol>
 <li>对于存在的某初始行动a，之后的行动全部从合法的决策中任意的做出选择，从而向最终结局迈进（称之为模拟）。</li>
-<li>终局时，计数胜负的次数。经过<span
-class="math inline"><em>N</em><sub><em>a</em></sub></span>次的反复操作，得到胜利次数<span
-class="math inline"><em>W</em><sub><em>a</em></sub></span>。</li>
-<li>通过步骤1和2对全部的最初行动进行操作，选择胜率 <span
-class="math inline"><em>w</em><sub><em>a</em></sub>/<em>N</em><sub><em>a</em></sub></span>
-最高的决策。</li>
+<li>终局时，计数胜负的次数。经过<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>N</mi><mi>a</mi></msub></mrow><annotation encoding="application/x-tex">N_a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.10903em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">a</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>次的反复操作，得到胜利次数<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>W</mi><mi>a</mi></msub></mrow><annotation encoding="application/x-tex">W_a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.13889em;">W</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.13889em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">a</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>。</li>
+<li>通过步骤1和2对全部的最初行动进行操作，选择胜率 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>w</mi><mi>a</mi></msub><mi mathvariant="normal">/</mi><msub><mi>N</mi><mi>a</mi></msub></mrow><annotation encoding="application/x-tex">w_a/N_a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.02691em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">a</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mathrm">/</span><span class="mord"><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.10903em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">a</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span> 最高的决策。</li>
 </ol>
 <h4 id="蒙特卡洛法的特征">蒙特卡洛法的特征</h4>
 <p>蒙特卡洛法的优点：</p>
@@ -531,24 +578,25 @@ class="math inline"><em>w</em><sub><em>a</em></sub>/<em>N</em><sub><em>a</em></s
 <li>比起评价函数+MINMAX系程序方法在围棋中有着压倒性的优势。</li>
 <li>仅仅5年时间，就从业余初段晋升到职业六段的水平，进而发展出AlphaGo这样击败人类职业九段的怪物。</li>
 <li>比起MINMAX那种和人类完全不一样的暴力型思考逻辑，蒙特卡洛方法处理的黑白棋与围棋人工智能，不仅仅强大，而且下棋的方式看上去更加自然符合人类行为模式。</li>
-</ul></li>
+</ul>
+</li>
 </ul>
 <p>蒙特卡洛法的缺点：</p>
 <ul>
-<li>需要进行足够次数的模拟。
+<li>
+<p>需要进行足够次数的模拟。</p>
 <ul>
 <li>对于分支过多的游戏而言，处理很困难。</li>
 <li>对于象棋这样的游戏，随机模拟不容易收敛游戏过程（即可能导致游戏无法终结），模拟效果低下，还不如MINMAX简单粗暴给出最优的唯一解。</li>
-</ul></li>
-<li>不管怎么模拟，基本上是基于一个概率值做出的选择，概率这东西有时候是错的，万分之一的胜机事实上和理论上都存在，因此蒙特卡洛法在准确性上要比MINMAX要低（如果MINMAX可以很好地处理问题的话）即便是模拟无穷大次，也不能像MINMAX那样简单粗暴拍着胸脯给出最优解。
+</ul>
+</li>
+<li>
+<p>不管怎么模拟，基本上是基于一个概率值做出的选择，概率这东西有时候是错的，万分之一的胜机事实上和理论上都存在，因此蒙特卡洛法在准确性上要比MINMAX要低（如果MINMAX可以很好地处理问题的话）即便是模拟无穷大次，也不能像MINMAX那样简单粗暴拍着胸脯给出最优解。</p>
 <ul>
 <li>所以围棋还不敢说Solved game。</li>
 </ul>
-</br></li>
+</br>
+</li>
 </ul>
-**
-<center>
-END
-</center>
-<p>**</p>
+<p><strong><center>END </center></strong></p>
 </div></section><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="Donate" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><span class="icon iconify" data-icon="ri:hand-coin-line"></span></span><div id="reward-comment">I'm so cute. Please give me money.</div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>Post author: </strong>Junwei LI</li><li class="post-copyright-link"><strong>Post link: </strong><a href="https://nandcpointfm.github.io/2026/04/17/DaoLun11/" title="关于《游戏学导论》的研学记录与个人思考 - ( 11 )">https://nandcpointfm.github.io/2026/04/17/DaoLun11/</a></li><li class="post-copyright-license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><span class="icon iconify" data-icon="ri:creative-commons-line"></span><span class="icon iconify" data-icon="ri:creative-commons-by-line"></span><span class="icon iconify" data-icon="ri:creative-commons-nc-line"></span><span class="icon iconify" data-icon="ri:creative-commons-sa-line"></span></a> unless otherwise stated.</li></ul></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2026/04/20/Game_Refinement_Thoery/" rel="prev" title="对游戏洗练度理论的学习日志——浅读GR理论的原始学术文献"><span class="icon iconify" data-icon="ri:arrow-left-s-line"></span><span class="post-nav-text">对游戏洗练度理论的学习日志——浅读GR理论的原始学术文献</span></a></div><div class="post-nav-item"><a class="post-nav-next" href="/2026/04/12/DaoLun10/" rel="next" title="关于《游戏学导论》的研学记录与个人思考 - ( 10 )"><span class="post-nav-text">关于《游戏学导论》的研学记录与个人思考 - ( 10 )</span><span class="icon iconify" data-icon="ri:arrow-right-s-line"></span></a></div></div></div><div class="hty-card" id="comment"></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2019 – 2026 </span><span class="with-love" id="animate"><span class="icon iconify" data-icon="ri:cloud-line"></span></span><span class="author"> Junwei LI</span></div><div class="powered"><span>Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> v8.1.1</span><span class="footer-separator">|</span><span>Theme - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.10.11</span></div></footer></div><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><span class="icon iconify" data-icon="ri:arrow-up-s-line"></span><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a></body></html>
