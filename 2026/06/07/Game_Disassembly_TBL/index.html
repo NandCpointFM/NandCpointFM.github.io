@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="Junwei LI"><meta name="copyright" content="Junwei LI"><meta name="generator" content="Hexo 8.1.1"><meta name="theme" content="hexo-theme-yun"><title>针对《遗愿清单》现有Demo的拆解 | Natika_s World of Game Designing</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/star-markdown-css@0.4.1/dist/yun/yun-markdown.min.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/prism-theme-vars/base.css"><script src="https://fastly.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>function initScrollReveal() {
+  [".post-card",".markdown-body img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+}
+document.addEventListener("DOMContentLoaded", initScrollReveal);
+document.addEventListener("pjax:success", initScrollReveal);
+</script><link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script><link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css"><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js"></script><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"></script><script type="module">import { renderKatex } from '/js/utils.js'
+document.addEventListener("DOMContentLoaded", () => {
+  renderKatex({
+    ...{},
+    ...undefined?.options,
+  });
+});</script><link rel="icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="preconnect" href="https://fastly.jsdelivr.net/npm/" crossorigin><script id="yun-config">
+    window.Yun = {}
+    window.CONFIG = {"hostname":"nandcpointfm.github.io","root":"/","title":"游戏不止","version":"1.10.11","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}.","hits":"${hits} results found","hits_time":"${hits} results found in ${time} ms"},"anonymous_image":"https://cdn.yunyoujun.cn/img/avatar/none.jpg","say":{"api":"/data/sentences.json"},"fireworks":{"colors":null},"vendors":{"host":"https://fastly.jsdelivr.net/npm/","darken":"https://fastly.jsdelivr.net/npm/darken@1.5.0"}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><meta name="description" content="对笔者参与游开早期的一些设计进行一次简单的拆解，便于团队后期优化并进行继续开发。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="针对《遗愿清单》现有Demo的拆解">
+<meta property="og:url" content="https://nandcpointfm.github.io/2026/06/07/Game_Disassembly_TBL/index.html">
+<meta property="og:site_name" content="Natika_s World of Game Designing">
+<meta property="og:description" content="对笔者参与游开早期的一些设计进行一次简单的拆解，便于团队后期优化并进行继续开发。">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-06-07T05:00:00.000Z">
+<meta property="article:modified_time" content="2026-06-07T06:15:12.477Z">
+<meta property="article:author" content="Junwei LI">
+<meta property="article:tag" content="游戏设计，拆解">
+<meta name="twitter:card" content="summary"><script>(function() {
+  if (CONFIG.mode !== 'auto') return
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  const setting = localStorage.getItem('darken-mode') || 'auto'
+  if (setting === 'dark' || (prefersDark && setting !== 'light'))
+    document.documentElement.classList.toggle('dark', true)
+})()</script></head><body><script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script><script>// Define global variable
+IconifyProviders = {
+  // Empty prefix: overwrite default API provider configuration
+  '': {
+    // Use custom API first, use Iconify public API as backup
+    resources: [
+        'https://api.iconify.design',
+    ],
+    // Wait for 1 second before switching API hosts
+    rotate: 1000,
+  },
+};</script><script defer src="https://fastly.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="Table of Contents"><span class="icon iconify" data-icon="ri:list-ordered"></span></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="Overview"><span class="icon iconify" data-icon="ri:passport-line"></span></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="Junwei LI"><img width="96" loading="lazy" src="/images/head1.jpg" alt="Junwei LI"></a><div class="site-author-name"><a href="/about/">Junwei LI</a></div><span class="site-name">Natika_s World of Game Designing</span><sub class="site-subtitle">I wanna be the BEST GAME DESIGNER.</sub><div class="site-description">a personal blog for sharing my thoughts about the GREATEST GAMES</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="Home"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:home-4-line"></span></span></a><div class="site-state-item"><a href="/archives/" title="Archives"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:archive-line"></span></span><span class="site-state-item-count">15</span></a></div><div class="site-state-item"><a href="/categories/" title="Categories"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:folder-2-line"></span></span><span class="site-state-item-count">4</span></a></div><div class="site-state-item"><a href="/tags/" title="Tags"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="site-state-item-count">5</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:settings-line"></span></span></a></nav><hr style="margin-bottom:0.5rem"><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><span class="icon iconify" data-icon="ri:genderless-line"></span></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><span class="icon iconify" data-icon="ri:contrast-2-line"></span></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%92%88%E5%AF%B9%E9%81%97%E6%84%BF%E6%B8%85%E5%8D%95%E7%8E%B0%E6%9C%89demo%E7%9A%84%E6%8B%86%E8%A7%A3"><span class="toc-number">1.</span> <span class="toc-text">针对《遗愿清单》现有Demo的拆解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E5%89%8D%E8%A8%80"><span class="toc-number">1.1.</span> <span class="toc-text">一、前言</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="toc-number">1.1.1.</span> <span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8B%86%E8%A7%A3%E6%80%9D%E8%B7%AF"><span class="toc-number">1.1.2.</span> <span class="toc-text">拆解思路</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E5%88%A9%E7%94%A8mda%E6%A1%86%E6%9E%B6%E6%8B%86%E8%A7%A3%E6%B8%B8%E6%88%8F%E7%9A%84%E6%A0%B8%E5%BF%83%E6%9C%BA%E5%88%B6"><span class="toc-number">1.2.</span> <span class="toc-text">二、利用MDA框架拆解游戏的核心机制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#a%E7%BE%8E%E5%AD%A6aesthetics"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1. A：美学（Aesthetics）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#d%E5%8A%A8%E6%80%81dynamics"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.2. D：动态（Dynamics）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E5%88%A9%E7%94%A8mda%E6%A1%86%E6%9E%B6%E6%8B%86%E8%A7%A3%E6%B8%B8%E6%88%8F%E7%9A%84%E5%AE%8F%E8%A7%82%E4%BD%93%E9%AA%8C"><span class="toc-number">1.3.</span> <span class="toc-text">三、利用MDA框架拆解游戏的宏观体验</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E5%AF%B9%E4%BA%8E%E5%85%B7%E4%BD%93%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1%E7%9A%84%E6%8D%89%E8%99%AB%E4%B8%8E%E4%BC%98%E5%8C%96"><span class="toc-number">1.4.</span> <span class="toc-text">四、对于具体关卡设计的捉虫与优化</span></a></li></ol></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article" style="--smc-primary:#0078E7;"><link itemprop="mainEntityOfPage" href="https://NandCpointFM.github.io/2026/06/07/Game_Disassembly_TBL/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Junwei LI"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Natika_s World of Game Designing"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">针对《遗愿清单》现有Demo的拆解</h1><div class="post-meta"><div class="post-time"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-line"></span></span> <time title="Created: 2026-06-07 13:00:00" itemprop="dateCreated datePublished" datetime="2026-06-07T13:00:00+08:00">2026-06-07</time></div><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><span class="icon iconify" data-icon="ri:folder-line"></span></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%EF%BC%8C%E6%B8%B8%E6%88%8F%E6%8B%86%E8%A7%A3/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">游戏设计，游戏拆解</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag-item" href="/tags/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%EF%BC%8C%E6%8B%86%E8%A7%A3/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">游戏设计，拆解</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><ul>
+<li>对笔者参与游开早期的一些设计进行一次简单的拆解，便于团队后期优化并进行继续开发。</li>
+</ul>
+<span id="more"></span>
+<h2 id="针对遗愿清单现有demo的拆解">针对《遗愿清单》现有Demo的拆解</h2>
+<h3 id="一前言">一、前言</h3>
+<h4 id="写在前面">写在前面</h4>
+<p>《遗愿清单》是一款剧情驱动的横板解密游戏，是笔者参与游戏开发的早期作品之一。当时的笔者缺乏设计经验与能力，许多设计并不能导向较好的游戏体验，加之笔者饱受学业与生活的摧残，缺乏足够的精力，在团队管理上也没有尽到队长的责任，一定程度上拖累了团队出色的美术表现与程序实现。现在作品已经入围2026开拓芯的决赛答辩，笔者认为有必要针对已有的demo进行一次拆解，分析设计层面存在的问题，以当下更为充沛的精力与强于曾经的能力来弥补先前设计上的不足，在有限的时间里帮助作品调优。</p>
+<h4 id="拆解思路">拆解思路</h4>
+<p>笔者在本次拆解中会分别聚焦游戏的核心机制、游戏的体验流程与具体的解密关卡，从这三个方面对游戏存在的问题进行阐释并提出修改建议。核心机制是游戏解密的底层逻辑，在具体的关卡中以不同形式重新展现，串联了关卡形成了宏观的体验流程，三者息息相关，但又各有侧重，笔者将一一进行拆解分析。</p>
+<h3
+id="二利用mda框架拆解游戏的核心机制">二、利用MDA框架拆解游戏的核心机制</h3>
+<pre><code>关于MDA框架、FDD框架、分层四元法的相关内容，可移步笔者的这一篇博客：
+https://nandcpointfm.github.io/2026/03/31/DaoLun8/</code></pre>
+<p>所谓核心机制，即MDA框架的机制设计中最底层、复用性最高的规则。《遗愿清单》的核心机制，是以光照改变图层，从而影响场景布局与可交互元素的状态。接下来我们针对这一核心机制进行系统的拆解。</p>
+<h4 id="a美学aesthetics">2.1. A：美学（Aesthetics）</h4>
+<p>我们希望利用这样的机制为玩家提供怎样的美学感受？</p>
+<p>对于解密游戏，玩家追求的感受一般是：</p>
+<ul>
+<li>通过对解密元素的考察与推理，找到正确的解法，从而实现找到真相、克服挑战的收获感/成就感。</li>
+</ul>
+<p>对于剧情驱动游戏，玩家追求的感受一般是：</p>
+<ul>
+<li>以局内人视角旁观一个曲折回环的故事，在叙事体验中感受情感的起伏。</li>
+</ul>
+<p>尽管《遗愿清单》兼具两种游戏的属性，但我们的核心机制显然侧重的是前者，也就是服务于解密向的内容。对于MDA框架给出的美学分类，我们认为光照解密的核心机制对应的美学包括：</p>
+<ul>
+<li><p>感知（Sensation）：光照解密带来的视觉体验应该是具有感官冲击力的，玩家在操控光线的过程中感受到视听层面的美感。</p></li>
+<li><p>挑战（Challenge）：我们希望围绕核心机制设计的解密是具有挑战性的，即
+“游戏作为障碍课程，驱动玩家掌握技巧、突破难关，获得成就感”。</p></li>
+<li><p>探索（Discovery）：玩家对于解密的探索是克服挑战的基本方式，而光照的变化带来的图层切换本身就能很好地隐藏那些值得被玩家探索的内容，</p></li>
+</ul>
+<blockquote>
+<p>上述三种美学只是我们在设计上希望实现的目标，即我们希望带给玩家的感受。但值得思考的是，先前的设计是否有效地向玩家传达了这三种美学。笔者认为答案是否定的：</p>
+<p>从感知层面，玩家操控光照的过程中并没有引出富有冲击力的感官刺激（<em>可以认为这部分的分析是从审美角度出发的</em>），这是笔者地编设计与关卡设计的问题——许多时候光照来自于单一的光源，比如电灯或者探照灯，只是作为工具呆板地引出一个锥形或者圆形光照范围，照亮某个位置的可互动要素，这并没有什么“美”的地方。对比游戏中少部分值得称道的“光照带来的美学感官刺激”，比如天台下方的室内找密码，或者是咖啡馆的光照随时间变化（<em>其实这个部分也有很多问题</em>），游戏的多数光照解密并不具有审美价值——一个典型的例子是天台的光照——受控于开关的舞台灯只负责照亮对话区域从而引出对话，玩家不能和它有多少交互，它也并没有让场景看上去更有视觉表现力，它的存在只是为了告诉玩家：“你看，我们的核心机制是光内光外可交互的内容有所不同”。当然，作为一个剧情箱庭（<em>天台确实算是主剧情的部分吧？</em>）的光照解密，它本身确实具有极强的工具属性，因此它存在这样的问题也是情理之中的，但是同样的问题或多或少地表现在其他的光照解密中，这就需要我们反思了。</p>
+<p>我们注意到，我们所认为最理想的光照解密的核心机制是高度与场景关联的，依靠场景的高低差与场景中某个解密的特色物品/机制以及不同的光源，每个解密都具有一定的特色。因此笔者认为，调控解密过程中游戏场景在光照机制下的实际表现（<em>比如哪里亮哪里暗带来的视觉冲击</em>）是提升游戏感知美学的重要方法。</p>
+<p>从挑战层面，我们的基于光照解密机制的谜题设计真的具有挑战性吗？这里的挑战性不是指难度（<em>那样的话我们的解密可太有挑战性了</em>），而是指那些虽然存在困难与障碍，但是大体可以克服，并符合玩家心流发展的难度梯度设计，要让玩家觉得有挑战性，但又有解决问题的自信与希望，并在游戏过程中逐渐学习成长得到解密的思路，这样的设计我们才称之为具有挑战性。</p>
+<p>而事实上，问题一是我们的解密难度相对较高（<em>一方面是因为光照解密彼此独立，单个解密在设计之初就定下了较高的难度，另一方面是因为对比起解密的难度，我们的引导仍然相当有限</em>），问题二是许多解密的难度不来自于光照本身，而是来自于具体的关卡设计，光照只作为结果的输出（<em>比如天台连好线就可以拉闸开灯，灯光亮起只是在玩家完成解密之后负责照亮对话区，从而引导流程推进</em>），这使得基于光照的迷题的解决方式没有一个通用的思路或者相近的理念，因而玩家根本没有什么学习空间，只需要知道“光照意味着同一场景下不同的具体元素”就已经完成了所有的学习，因此每次解密的共享知识库只有“光可以切换图层”，玩家只能对每个解密单独分析（<em>这本身也是可以接受的，就像《锈湖》也没有让每个解密都有显著的共性，但其前提是每个解密质量都相对比较高，难度曲线也相对适宜，我们目前的谜题质量显然不够高</em>）。</p>
+<p>此外，又回到我们前面的分析，我们的核心机制在理想情况下应该高度与场景关联，但是实际上有些解密没有很好地实现这个目的。比如影院外——放映机之间的联系只是利用了高低差而已，并没有和场景有什么进一步的互动。从与场景的关系出发设计谜题，应该可以很好地调控玩家体验、控制游戏难度，但是游戏的实际谜题设计在这方面并没有做好。</p>
+<p>从探索层面，光照机制带来的可探索空间基本被浪费了。正如前文所说，光照在一些具体的解密中只作为对解密结果的奖励（<em>解密成功
+-&gt;
+灯光亮起照亮某个关键道具或者对话区域</em>），而不是解密的一部分，玩家连交互它的权利都没有，又和谈利用它来探索呢？而很多具体的解密就算是让光照深度参与到解密的过程，也没有在图层间设计值得被玩家探索的内容，不论是完成解密必须的条件还是面向剧情拓展的搜集品（比如电影院的那几个探照灯或者激光解密），这里还是说到天台下的室内部分，这里的密码写在墙上的设计很好地实现了探索的目的，但这样的设计后续很少在出现在游戏过程中，这是很遗憾的。这也再一次表现了我们的光照解密与场景互动的脱钩</p>
+</blockquote>
+<h4 id="d动态dynamics">2.2. D：动态（Dynamics）</h4>
+<p>讨论完美学，我们聚焦游戏动态，我们希望用怎样的动态引出上述的三种美学呢？</p>
+<ul>
+<li><p>我们希望玩家有更多与光照直接交互的过程（<em>操控光</em>），这是一切的前提，否则游戏的核心机制并不能引出美学，正如我们前面所说，我们不希望看见光只在解密结束后的某个地方亮起，而是希望玩家利用它来解密。</p></li>
+<li><p>我们希望光照能够在一定的角度或者情形中（<em>尤其是正确完成解密需要的角度或者情形</em>）具有更有视觉张力的表现效果，这一方面涉及到与场景的互动与表现。这不是意味着我们要做特别夸张的美术特效，就以天台下室内找密码的解密为例，光照与阴影一起拼凑出了一个完整的密码，实现起来并不难，但是它就是让人觉得很讨巧，这就是我们说的表现效果。</p></li>
+<li><p>我们希望解密的难度是可控的</p></li>
+</ul>
+<h3
+id="三利用mda框架拆解游戏的宏观体验">三、利用MDA框架拆解游戏的宏观体验</h3>
+<h3
+id="四对于具体关卡设计的捉虫与优化">四、对于具体关卡设计的捉虫与优化</h3>
+</div></section><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="Donate" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><span class="icon iconify" data-icon="ri:hand-coin-line"></span></span><div id="reward-comment">I'm so cute. Please give me money.</div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>Post author: </strong>Junwei LI</li><li class="post-copyright-link"><strong>Post link: </strong><a href="https://nandcpointfm.github.io/2026/06/07/Game_Disassembly_TBL/" title="针对《遗愿清单》现有Demo的拆解">https://nandcpointfm.github.io/2026/06/07/Game_Disassembly_TBL/</a></li><li class="post-copyright-license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><span class="icon iconify" data-icon="ri:creative-commons-line"></span><span class="icon iconify" data-icon="ri:creative-commons-by-line"></span><span class="icon iconify" data-icon="ri:creative-commons-nc-line"></span><span class="icon iconify" data-icon="ri:creative-commons-sa-line"></span></a> unless otherwise stated.</li></ul></article><div class="post-nav"><div class="post-nav-item"></div><div class="post-nav-item"><a class="post-nav-next" href="/2026/05/18/Game_Disassembly_CS/" rel="next" title="针对《CS2》的战斗体验与对抗博弈的多系统拆解"><span class="post-nav-text">针对《CS2》的战斗体验与对抗博弈的多系统拆解</span><span class="icon iconify" data-icon="ri:arrow-right-s-line"></span></a></div></div></div><div class="hty-card" id="comment"></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2019 – 2026 </span><span class="with-love" id="animate"><span class="icon iconify" data-icon="ri:cloud-line"></span></span><span class="author"> Junwei LI</span></div><div class="powered"><span>Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> v8.1.1</span><span class="footer-separator">|</span><span>Theme - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.10.11</span></div></footer></div><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><span class="icon iconify" data-icon="ri:arrow-up-s-line"></span><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a></body></html>
