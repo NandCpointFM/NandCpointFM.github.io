@@ -1,8 +1,8 @@
 ---
 title: "Natika的Casual Talk - （1）"
 date: 2026-5-13 13:00:00 
-tags: [游戏设计，杂谈]
-categories: [游戏设计，杂谈]
+tags: [游戏设计,杂谈]
+categories: [游戏设计,杂谈]
 ---
 一些关于游戏或游戏设计 / 开发的零散笔记 / 思考 - （1）。
 
