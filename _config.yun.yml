@@ -255,6 +255,7 @@ js:
 # custom your assets in head
 head:
   css:
+    - /css/custom.css
   js:
     base:
     async:
